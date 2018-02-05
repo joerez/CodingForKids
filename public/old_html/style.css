@@ -1,0 +1,182 @@
+body {
+	background-color: powderblue;
+	}
+
+	
+	/***Mobile menu CSS***/
+	
+	@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+	
+	/***Mobile menu CSS***/
+	
+	
+	
+
+	
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	background-image: url('https://image.ibb.co/fLBTBa/Untitled_design_1.png');
+	height: 375px;
+	
+	background-repeat: no-repeat;
+}
+
+.headbox {
+	width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+	
+	background-color: rgba(243, 146, 55, 0.5);
+	border-radius: 8px;
+	
+	
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+	
+}
+
+.boxtext {
+	
+	
+	
+	color: ;
+	
+	text-align: center;
+
+	margin-top: 10px;
+    margin-bottom: 10px;
+	
+}
+
+.video-p {
+	float: right;
+	
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	background-color: #F39237;
+	height: ;
+	width: 550 px;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+/*****begin contact form********/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+
+
+.footerp {color: ;
+margin-left: auto;
+margin-right: auto;
+padding-top: %;}/**Other Pages**//**CSS for blog posts**//**Text editors**/.texteditimg {	padding-left: 50%;}

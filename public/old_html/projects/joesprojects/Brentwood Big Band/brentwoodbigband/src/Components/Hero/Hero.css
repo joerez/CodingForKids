@@ -1,0 +1,97 @@
+.herocontain {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+
+
+
+.hero-image {
+    /* The image used */
+    background-image: url("./heroimg.jpg");
+
+    /* Set a specific height */
+    height: 750px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.hero-text {
+      text-align: center;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 200%;
+
+}
+
+.herop {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 15px;
+
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 33px;
+    border: 1px solid #17307e;
+    border-radius: 100px;
+    background: #2b5bed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2b5bed), to(#17307e));
+    background: -moz-linear-gradient(top, #2b5bed, #17307e);
+    background: linear-gradient(to bottom, #2b5bed, #17307e);
+    text-shadow: #0e1d4a 1px 3px 4px;
+    font: normal normal bold 26px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #1b3994;
+    background: #346dff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#346dff), to(#1c3a97));
+    background: -moz-linear-gradient(top, #346dff, #1c3a97);
+    background: linear-gradient(to bottom, #346dff, #1c3a97);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #17307e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#17307e), to(#17307e));
+    background: -moz-linear-gradient(top, #17307e, #17307e);
+    background: linear-gradient(to bottom, #17307e, #17307e);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABNElEQVRIid3VLUtEQRTG8Z+rLAhiEAQREYNJRcQFMZoMYjIYbH4Iq8WPYTBotJtsBpMLuk2T+IaCIL5g8C3cu7DenV3vvdwtPjBlzuH5n8PMmaHD6i7IZwAVLGMQ5/VAVw6zIczEq4JpjKEcx9/Rm8WwH5s4wC2+/1ifWSveTmHaElBKARjPWlFWQBp94S0U6MlpdoUaTlDFKe6wg5W8gD3sxmb3MSips7yAG6zjI0NBSH8GLynNmwa3qEOuq2kGigb8ww7yzEGjRrEQ+/RhtUjAHA5j40b9mo8QYAQTcWwYU3gM5G0EzIme65aANdG4lxP7IUAr1doFr4Wf4Gogdx7PibxXLDYmJTsItQzHLfYmRYdcFk36ES7adbAVqP5B9CXmUvJPLmEJs6I7/YR9XOYFdFw/cItRkcoZ464AAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .hero-text {
+      margin-top: 15%;
+
+    }
+}

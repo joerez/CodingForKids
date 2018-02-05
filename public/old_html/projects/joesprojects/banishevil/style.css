@@ -1,0 +1,44 @@
+/**CSS**/
+body {
+  background-color: gold;
+}
+
+.main {
+  margin-top: 2%;
+  background-color: silver;
+  padding-top: 1.5%;
+  text-align: center;
+  padding-bottom: 2%;
+  align-items: center;
+  align-content: center;
+
+}
+
+.buttonactivities {
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+   margin-top: 1%;
+   margin-bottom: 1%;
+}
+
+.redit {
+  background-color: red;
+  font-size: 700%;
+}
+
+.fun {
+  height: 40%;
+}
+
+.go {
+  display: none;
+}
+
+#person {
+  height: 40%;
+}

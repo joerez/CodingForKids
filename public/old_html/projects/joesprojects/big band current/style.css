@@ -1,0 +1,128 @@
+/**CSS**/
+
+/**navbar**/
+.mynav {
+  background-color: #ecf0f1;
+  color: black;
+
+
+  font-size: 100%;
+  width: 100%;
+}
+
+.mynav, a {
+  color: white;
+}
+
+.mynav, a:link, a:visited {
+    background-color: rgba(0,0,0,);
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ a:hover, a:active {
+    /*background-color: #212121;*/
+}
+
+.nava:hover {
+  background-color: #95a5a6;
+}
+
+.mylogo {
+padding: 0px 0px;
+float: left;
+font-size: 120%;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 335px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+
+.mynav, a:link, a:visited {
+  padding: 0;
+}
+.mylogo {
+  font-size: 100%;
+  float: none;
+}
+  }
+
+  @media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+
+  .mylogo {
+    font-size: 140%;
+    display: flex;
+    justify-content: center;
+    float: none;
+  }
+
+.mynav, a:link, a:visited {
+  padding: 5px 30px;
+}
+
+  }
+
+  @media only screen
+  and (min-device-width: 370px)
+  and (max-device-width: 400px)
+
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+
+  .mylogo {
+    font-size: 140%;
+    display: flex;
+    justify-content: center;
+    float: none;
+  }
+
+.mynav, a:link, a:visited {
+  padding: 5px 30px;
+}
+
+  }
+
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      .mynav, a:link, a:visited {
+        padding: 5 20;
+        margin-right: 20px;
+      }
+      .mylogo {
+        font-size: 100%;
+        float: none;
+      }
+  }
+
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .mynav, a:link, a:visited {
+        padding: 5 10;
+      }
+      .mylogo {
+        font-size: 100%;
+        float: none;
+      }
+  }
+
+/**End nav bar**/
+
+/**Hero image**/
+
+/**End of hero image**/

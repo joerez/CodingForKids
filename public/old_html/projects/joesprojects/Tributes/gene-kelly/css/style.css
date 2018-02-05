@@ -1,0 +1,66 @@
+body {
+  background-color: #EFEFEF;
+}
+
+.title {font-size: 0%;}
+
+#subtitle {font-size: 0%}
+
+h3 {margin-left: 25%;}
+
+.main {
+  background-color: #CAEBF2;
+  width: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border-color: ##CAEBF2;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#cover {
+}
+
+#cover-photo {
+  width: 0px;
+  border-color: #EFEFEF;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.image-text {
+  background-color: #EFEFEF;
+ width: 1080px;
+ 
+ 
+  margin-left: auto;
+  margin-right: auto;
+ Height: 30px;
+}
+
+.timeline-pic {float: right;
+  padding-right: 10px;
+  border-color: green;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 60%;
+  }
+
+ul {padding-left: 10%;}
+
+.quote { margin-left: 13%;
+  margin-right: 13%;
+font-size: 300%;
+}
+
+.quote-author {font-size: 200%;}
+
+.further-reading {margin-left: 10%;
+  margin-right: 10%;}
+
+.Footer {background-color:}
+

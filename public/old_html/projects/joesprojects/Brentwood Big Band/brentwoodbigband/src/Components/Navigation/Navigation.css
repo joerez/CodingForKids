@@ -1,0 +1,15 @@
+.navvy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .navtext {
+      padding-top: 1.3%;
+      font-size: 70%;
+
+    }
+}
