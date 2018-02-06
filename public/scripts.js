@@ -35,7 +35,14 @@ $('.rootSec2').delay(3000).fadeIn(3000, function(){
         $('.sec3text').delay(100).fadeIn(4000, function() {
 
 
-        $('.sec3text').addClass('animated pulse infinite')
+        $('.sec3text').addClass('animated pulse infinite').delay(2000).removeClass('pulse infinite').addClass('fadeOutUpBig')
+
+          $('.signUpForm').fadeIn(500);
+          $('.signUpForm').addClass('animated fadeInUpBig');
+
+
+
+
 
       })
 
@@ -45,4 +52,18 @@ $('.rootSec2').delay(3000).fadeIn(3000, function(){
 
 
 })
+
+
+
+$('.accountbtn').on("click", function() {
+  $('.signUpForm').removeClass('animated fadeInUpBig');
+  $('.signUpForm').addClass('animated fadeOutUpBig');
+  $('.logInForm').fadeIn(500);
+
+  $('.logInForm').addClass('animated fadeInUpBig');
+})
+
+
+
+
 })

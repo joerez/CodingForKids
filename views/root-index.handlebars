@@ -14,6 +14,57 @@
 </div>
 
 <div class="rootSec3">
-  <h1 align="center" class="sec3text">Please Log In<br>To Continue</h1>
-  <a class="sec3text btn btn-primary">Login</a>
-</div>
+  <h1 align="center" class="sec3text">Please Sign Up<br>To Continue</h1>
+  <a class="sec3text btn btn-primary">Sign Up Below</a>
+
+
+
+
+<div class="signUpForm">
+      <form action="/sign-up" method="post">
+        <legend class="whiteout">Sign Up</legend>
+        <div class="form-group">
+          <label class="whiteout" for="post-title">Username</label>
+          <input maxlength="16" type="text" name="username" class="form-control" id="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label class="whiteout" for="post-subreddit">Password</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="password">
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LciD0EUAAAAAMSM4b2xRawGOzSD0ke7mlaY-ZpQ"></div>
+        <br>
+
+
+        <div class='text-right'>
+          <button type="submit" class="btn btn-primary">Sign Up!</button>
+        </div>
+      </form>
+      <button class="accountbtn btn btn-primary">I Already Have An Account</button>
+
+</div><!--signUpForm-->
+
+
+<div class="logInForm">
+
+  <form action="/login" method="post">
+    <legend class="whiteout">Login</legend>
+    <div class="form-group">
+      <label class="whiteout" for="post-title">Username</label>
+      <input type="text" name="username" class="form-control" id="logusername" placeholder="Username">
+    </div>
+    <div class="form-group">
+      <label class="whiteout" for="post-subreddit">Password</label>
+      <input name="password" type="password" class="form-control" id="logpassword" placeholder="password">
+    </div>
+    <div class='text-right'>
+      <button type="submit" class="btn btn-primary">Login!</button>
+    </div>
+  </form>
+
+
+
+
+</div><!--LogInForm-->
+
+</div><!--sec 3-->

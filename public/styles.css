@@ -94,3 +94,33 @@ button sec2text {
   -webkit-text-stroke: white;
   color: white;
 }
+
+.signUpForm {
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  display: none;
+  color: white;
+}
+
+form {
+  transform: scale(2);
+}
+
+.whiteout {
+  color: white;
+}
+
+.accountbtn {
+  margin-top: 400px;
+  transform: scale(2);
+  margin-left: 40px;
+}
+
+.logInForm {
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  display: none;
+  color: white;
+}
