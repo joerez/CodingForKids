@@ -32,7 +32,7 @@ body {
 .rootSec2 {
   display: none;
   position: absolute;
-  background: url('http://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
+  background: url('https://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -73,7 +73,7 @@ button sec2text {
 .rootSec3 {
   display: none;
   position: absolute;
-  background: url('http://s3.amazonaws.com/pbblogassets/uploads/2014/01/32bit-Sparks.gif');
+  background: url('https://s3.amazonaws.com/pbblogassets/uploads/2014/01/32bit-Sparks.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
