@@ -57,8 +57,8 @@ $('.rootSec2').delay(3000).fadeIn(3000, function(){
 
 $('.accountbtn').on("click", function() {
   $('.logInForm').removeClass('animated zoomOutDown');
-  $('.signUpForm').removeClass('animated fadeInDownBig');
   $('.signUpForm').removeClass('animated fadeInUpBig');
+  $('.signUpForm').removeClass('animated fadeInDownBig');
   $('.signUpForm').addClass('animated fadeOutUpBig');
   $('.logInForm').fadeIn(500);
   $('.signUpForm').fadeOut(1000);
