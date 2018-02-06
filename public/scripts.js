@@ -19,7 +19,7 @@ var typed2 = new Typed("#typed", options);
 $(document).ready(function()
 {
 
-$('.rootSec1').fadeOut(12000).css('zIndex', '60', function() {
+$('.rootSec1').fadeOut(9000).css('zIndex', '60', function() {
 
 });
 $('.rootSec2').delay(3000).fadeIn(3000, function(){

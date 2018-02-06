@@ -1,5 +1,8 @@
 .rootSec1 {
-  background-color: black;
+  background: url('https://media2.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +28,10 @@
 .rootSec2 {
   display: none;
   position: absolute;
-  background-color: yellow;
+  background: url('https://image.ibb.co/fLBTBa/Untitled_design_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   top: 50px;
   left: 0px;
   height: 100vh;
@@ -36,9 +42,25 @@
   align-items: center;
 }
 
+.root2box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .sec2text {
   display: none;
   font-size: 600%;
   margin-bottom: 300px;
-  border-radius: 5px;
+  -webkit-text-stroke: white;
+
+}
+
+button sec2text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
