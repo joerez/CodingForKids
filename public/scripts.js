@@ -56,18 +56,20 @@ $('.rootSec2').delay(3000).fadeIn(3000, function(){
 
 
 $('.accountbtn').on("click", function() {
+  $('.logInForm').removeClass('animated zoomOutDown');
+  $('.signUpForm').removeClass('animated fadeInDownBig');
   $('.signUpForm').removeClass('animated fadeInUpBig');
   $('.signUpForm').addClass('animated fadeOutUpBig');
   $('.logInForm').fadeIn(500);
   $('.signUpForm').fadeOut(1000);
 
-  $('.logInForm').addClass('animated fadeInUpBig');
+  $('.logInForm').addClass('animated zoomInUp');
 })
 
 
 $('.accountbtn2').on("click", function() {
-  $('.logInForm').removeClass('animated fadeInUpBig');
-  $('.logInForm').addClass('animated fadeOutDownBig');
+  $('.logInForm').removeClass('animated zoomInUp');
+  $('.logInForm').addClass('animated zoomOutDown');
   $('.signUpForm').removeClass('animated fadeOutUpBig');
   $('.signUpForm').fadeIn(500);
   $('.logInForm').fadeOut(1000);
