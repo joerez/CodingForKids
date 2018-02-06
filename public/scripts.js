@@ -59,9 +59,23 @@ $('.accountbtn').on("click", function() {
   $('.signUpForm').removeClass('animated fadeInUpBig');
   $('.signUpForm').addClass('animated fadeOutUpBig');
   $('.logInForm').fadeIn(500);
+  $('.signUpForm').fadeOut(1000);
 
   $('.logInForm').addClass('animated fadeInUpBig');
 })
+
+
+$('.accountbtn2').on("click", function() {
+  $('.logInForm').removeClass('animated fadeInUpBig');
+  $('.logInForm').addClass('animated fadeOutDownBig');
+  $('.signUpForm').removeClass('animated fadeOutUpBig');
+  $('.signUpForm').fadeIn(500);
+  $('.logInForm').fadeOut(1000);
+
+
+  $('.signUpForm').addClass('animated fadeInDownBig');
+})
+
 
 
 

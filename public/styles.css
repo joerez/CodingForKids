@@ -124,3 +124,9 @@ form {
   display: none;
   color: white;
 }
+
+.accountbtn2 {
+  margin-top: 400px;
+  transform: scale(2);
+  margin-left: 40px;
+}
