@@ -60,8 +60,9 @@ $('.accountbtn').on("click", function() {
   $('.signUpForm').removeClass('animated fadeInUpBig');
   $('.signUpForm').removeClass('animated fadeInDownBig');
   $('.signUpForm').addClass('animated fadeOutUpBig');
-  $('.logInForm').fadeIn(500);
   $('.signUpForm').fadeOut(1000);
+
+  $('.logInForm').fadeIn(1000);
 
   $('.logInForm').addClass('animated zoomInUp');
 })
