@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .rootSec1 {
   background: url('https://media2.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
   background-size: cover;
@@ -28,7 +32,7 @@
 .rootSec2 {
   display: none;
   position: absolute;
-  background: url('https://image.ibb.co/fLBTBa/Untitled_design_1.png');
+  background: url('http://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,6 +45,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .root2box {
   color: white;
@@ -63,4 +68,29 @@ button sec2text {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.rootSec3 {
+  display: none;
+  position: absolute;
+  background: url('http://s3.amazonaws.com/pbblogassets/uploads/2014/01/32bit-Sparks.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: 61;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3text {
+  display: none;
+  font-size: 600%;
+  margin-bottom: 300px;
+  -webkit-text-stroke: white;
+  color: white;
 }
