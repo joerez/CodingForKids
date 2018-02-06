@@ -8,12 +8,14 @@
 // });
 
 
+
 var options = {
   strings: ["Hey", "Welcome<br>To", "Coding<br>For<br>Kids"],
   typeSpeed: 50
 }
 
 var typed2 = new Typed("#typed", options);
+
 
 
 $(document).ready(function()
@@ -80,7 +82,10 @@ $('.accountbtn2').on("click", function() {
 })
 
 
-
+$('#menudropper').on("click", function() {
+  $('.dropmenu').slideToggle(1000);
+  $('.dropmenu').css("display", "flex");
+})
 
 
 })
