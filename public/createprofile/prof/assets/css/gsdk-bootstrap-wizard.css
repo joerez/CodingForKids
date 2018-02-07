@@ -3,16 +3,16 @@
  =========================================================
  * Bootstrap Wizard - v1.1.1
  =========================================================
- 
+
  * Product Page: https://www.creative-tim.com/product/bootstrap-wizard
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/bootstrap-wizard/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
- 
+
 a {
   color: #2CA8FF;
 }
@@ -247,7 +247,7 @@ h1 .subtitle {
   font-weight: 200;
   text-align: center;
 }
-.wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
+.wizard-card[data-color="green"] /*.choice:hover*/ .icon, .wizard-card[data-color="green"] .choice.active .icon {
   border-color: #05AE0E;
 }
 .wizard-card[data-color="green"] .picture:hover {
@@ -267,7 +267,7 @@ h1 .subtitle {
   cursor: pointer;
   font-weight: 500;
 }
-.wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
+.wizard-card[data-color="azzure"] /*.choice:hover*/ .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
   border-color: #2CA8FF;
 }
 .wizard-card[data-color="azzure"] .picture:hover {
@@ -287,7 +287,7 @@ h1 .subtitle {
   cursor: pointer;
   font-weight: 500;
 }
-.wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
+.wizard-card[data-color="blue"] /*.choice:hover*/ .icon, .wizard-card[data-color="blue"] .choice.active .icon {
   border-color: #3472F7;
 }
 .wizard-card[data-color="blue"] .picture:hover {
@@ -307,7 +307,7 @@ h1 .subtitle {
   cursor: pointer;
   font-weight: 500;
 }
-.wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
+.wizard-card[data-color="orange"] /*.choice:hover*/ .icon, .wizard-card[data-color="orange"] .choice.active .icon {
   border-color: #FF9500;
 }
 .wizard-card[data-color="orange"] .picture:hover {
@@ -327,7 +327,7 @@ h1 .subtitle {
   cursor: pointer;
   font-weight: 500;
 }
-.wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
+.wizard-card[data-color="red"] /*.choice:hover*/ .icon, .wizard-card[data-color="red"] .choice.active .icon {
   border-color: #FF3B30;
 }
 .wizard-card[data-color="red"] .picture:hover {
@@ -377,7 +377,7 @@ h1 .subtitle {
   font-size: 30px;
   line-height: 111px;
 }
-.wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
+.wizard-card /*.choice:hover*/ .icon, .wizard-card .choice.active .icon {
   border-color: #2ca8ff;
 }
 .wizard-card .choice input[type="radio"],

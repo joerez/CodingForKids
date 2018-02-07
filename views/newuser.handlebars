@@ -1,3 +1,4 @@
+
 <head>
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="/createprofile/prof/assets/img/apple-icon.png">
@@ -22,6 +23,8 @@
 </head>
 
 <body>
+	{{> navbar}}
+
 <div class="image-container set-full-height" style="background-image: url('https://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg')">
     <!--   Creative Tim Branding   -->
          <div class="logo-container">
@@ -102,6 +105,7 @@
                             </div>
                             <div class="tab-pane" id="account">
                                 <h4 class="info-text"> What's Your Experience Level?</h4>
+																<p align="center">Select One</p>
                                 <div class="row">
 
                                     <div class="col-sm-10 col-sm-offset-1">
@@ -207,6 +211,18 @@
 	<script src="/createprofile/prof/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
 	<script src="/createprofile/prof/assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="/createprofile/prof/assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--Navbar dropper -->
+	<script>
+
+	$('#menudropper').on("click", function() {
+	  $('.dropmenu').slideToggle(500);
+	  $('.dropmenu').css("display", "flex");
+	})
+
+
+	</script>
+
 
 	<!--  Plugin for the Wizard -->
 	<script src="/createprofile/prof/assets/js/gsdk-bootstrap-wizard.js"></script>
