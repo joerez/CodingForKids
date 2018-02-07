@@ -2,27 +2,37 @@ body {
   background-color: black;
 }
 
+.loginbkg {
+  background-image: linear-gradient(rgba(62, 20, 20, 0.3), rgba(62, 20, 20, 0.3)), url('https://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
 .rootSec1 {
   background: url('https://media2.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 62;
+  right: 50px;
 }
 
 .root1Text {
   color: white;
-  margin-bottom: 500px;
-  font-size: 600%;
+  margin-bottom: 100px;
+  font-size: 400%;
 }
 
 .typingbox {
-  font-size: 200%;
+  font-size: 100%;
 }
 
 .typed-cursor {
@@ -57,8 +67,8 @@ body {
 
 .sec2text {
   display: none;
-  font-size: 600%;
-  margin-bottom: 300px;
+  font-size: 400%;
+  margin-bottom: 100px;
   -webkit-text-stroke: white;
 
 }
@@ -89,22 +99,23 @@ button sec2text {
 
 .sec3text {
   display: none;
-  font-size: 600%;
-  margin-bottom: 300px;
+  font-size: 400%;
+  margin-bottom: 100px;
   -webkit-text-stroke: white;
   color: white;
 }
 
 .signUpForm {
   position: absolute;
-  top: 400px;
-  left: 350px;
+  top: 50px;
+  left: 0;
   display: none;
   color: white;
+  width: 100%;
 }
 
-form {
-  transform: scale(2);
+.forms {
+  transform: scale(1);
 }
 
 .whiteout {
@@ -112,23 +123,26 @@ form {
 }
 
 .accountbtn {
-  margin-top: 400px;
-  transform: scale(2);
-  margin-left: 40px;
+  margin-top: 100px;
+  transform: scale(1);
+  margin-left: 0px;
 }
 
 .logInForm {
   position: absolute;
-  top: 400px;
-  left: 350px;
+  top: 50px;
+  left: 0px;
   display: none;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .accountbtn2 {
-  margin-top: 400px;
-  transform: scale(2);
-  margin-left: 40px;
+  margin-top: 100px;
+  transform: scale(1);
+  margin-left: 0px;
 }
 
 .whhh {

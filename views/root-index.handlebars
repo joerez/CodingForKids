@@ -1,3 +1,6 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 <div class="rootSec1">
 
 <div class="typingbox">
@@ -20,7 +23,11 @@
 
 
 <div class="signUpForm">
-      <form action="/sign-up" method="post">
+  <div class="container">
+<center>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <form class="forms" action="/sign-up" method="post">
         <legend class="whiteout">Sign Up</legend>
         <div class="form-group">
           <label class="whiteout" for="post-title">Username</label>
@@ -35,35 +42,46 @@
         <br>
 
 
-        <div class='text-right'>
           <button type="submit" class="btn btn-primary">Sign Up!</button>
-        </div>
       </form>
-      <button class="accountbtn btn btn-primary">I Already Have An Account</button>
+    </div>
 
+
+    </center>
+  </div><!--container-->
 </div><!--signUpForm-->
+
+<button class="accountbtn btn btn-primary">I Already Have An Account</button>
 
 
 <div class="logInForm">
 
-  <form action="/login" method="post">
-    <legend class="whiteout">Login</legend>
-    <div class="form-group">
-      <label class="whiteout" for="post-title">Username</label>
-      <input type="text" name="username" class="form-control" id="logusername" placeholder="Username">
+
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <form class="forms" style="margin-top: 30px;" action="/login" method="post">
+        <legend class="whiteout">Returning Users - Login</legend>
+        <div class="form-group">
+          <label class="whiteout" for="post-title">Username</label>
+          <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label class="whiteout" for="post-subreddit">Password</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="password">
+        </div>
+        <div class='text-right'>
+          <button type="submit" class="btn btn-primary">Login!</button>
+        </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label class="whiteout" for="post-subreddit">Password</label>
-      <input name="password" type="password" class="form-control" id="logpassword" placeholder="password">
-    </div>
-    <div class='text-right'>
-      <button type="submit" class="btn btn-primary">Login!</button>
-    </div>
-  </form>
+  </div>
+  </div>
 
 
+  <center>
   <button class="accountbtn2 btn btn-primary">Wait, I Don't Have An Account</button>
-
+  </center>
 
 </div><!--LogInForm-->
 

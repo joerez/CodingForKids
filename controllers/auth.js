@@ -15,7 +15,7 @@ module.exports = (app) => {
 
   app.get('/sign-up',  (req, res) => {
 
-    res.render('sign-up.handlebars');
+    res.render('root-index.handlebars');
   });
 
   // SIGN UP POST

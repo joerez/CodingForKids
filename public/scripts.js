@@ -83,7 +83,7 @@ $('.accountbtn2').on("click", function() {
 
 
 $('#menudropper').on("click", function() {
-  $('.dropmenu').slideToggle(1000);
+  $('.dropmenu').slideToggle(500);
   $('.dropmenu').css("display", "flex");
 })
 
