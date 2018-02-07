@@ -1,6 +1,21 @@
+<link rel="stylesheet" href="/dashboardstyle.css">
+
+
 {{#if currentUser.firstTime}}
-<h1 class="whiteout" align="center">Welcome {{currentUser.username}}! Please visit <a href="/firstvisit">Profile Builder</a> Before Moving On!</h1>
+<div class="modelbox animated bounceInDown">
+  <h1 class="whiteout" align="center">Welcome <span style="color: #ecf0f1">{{currentUser.username}}!</span></h1>
+  <h2 class="whiteout" align="center">It's your first time here! Please visit the <a style="color: #ecf0f1" href="/firstvisit">Profile Builder</a> to move on!</h2>
+  <a style="margin-top: 30px; margin-left: 100px; margin-right: 100px;" role="button" class="btn btn-primary" href="/firstvisit">PROFILE BUILDER</a>
+</div>
 {{else}}
 {{/if}}
-Welcome {{currentUser.username}}! Please visit <a href="/firstvisit">Profile Builder</a> Before Moving On!
+
+
+
+
+
+
+
+
+
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>

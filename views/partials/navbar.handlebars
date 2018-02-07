@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(255,0,0,.5);
+  background-color: rgba(52, 152, 219,1);
   position: absolute;
   height: ;
   width: 100%;
@@ -56,10 +56,16 @@
 <nav style="margin-bottom: 0px;" class="navbar navbar-default">
   <div  class="container-fluid">
     <!--<div class="navbar-header">-->
-      <a class="navbar-brand sello" href="/">
+      {{#if currentUser}}
+      <a class="navbar-brand sello" href="/dashboard">
         CodingForKids
       </a>
 
+      {{else}}
+      <a class="navbar-brand sello" href="/">
+        CodingForKids
+      </a>
+      {{/if}}
 
 
 
