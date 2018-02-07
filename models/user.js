@@ -18,7 +18,15 @@ const UserSchema = new Schema({
   advanced        : { type : Boolean, default: false },
   teacheracc      : { type : Boolean, default: false },
   group           : { type : String },
-  students        : [{type : String}]
+  students        : [{type : String}],
+  email           : {type : String},
+  image           : {type : String},
+  firstname       : {type : String},
+  lastname        : {type : String},
+  Age             : {type : String},
+  School          : {type : String},
+  location        : {type : String},
+  phone           : {type : String}
 });
 
 UserSchema.pre('save', function(next) {

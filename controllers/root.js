@@ -18,10 +18,29 @@ app.get('/', (req, res) => {
 
 
 app.get('/dashboard', (req, res) => {
+  // let currentUser = req.user
+
+
+  User.findById(req.user._id, (err, user) => {
+    res.render('dashboard', {currentUser : user});
+
+  })
+
+
+
+ //  if (currentUser.firstTime) {
+ //    res.render('newuser', {currentUser, layout: false});
+ //  } else {
+ //  res.render('dashboard', {currentUser});
+ // }
+})
+
+app.get('/firstvisit', (req, res) => {
   let currentUser = req.user
 
 
-  res.render('dashboard', {currentUser});
+  res.render('newuser', {currentUser, layout: false});
 })
+
 
 }

@@ -1,7 +1,6 @@
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-
-
-
+{{#if currentUser.firstTime}}
+<h1 class="whiteout" align="center">Welcome {{currentUser.username}}! Please visit <a href="/firstvisit">Profile Builder</a> Before Moving On!</h1>
+{{else}}
+{{/if}}
+Welcome {{currentUser.username}}!
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>

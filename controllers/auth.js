@@ -112,9 +112,18 @@ module.exports = (app) => {
             intermediate: user.intermediate,
             advanced: user.advanced,
             teacheracc: user.teacheracc,
-            leadership: user.leadership,
+            //leadership: user.leadership,
             group: user.group,
-            students: user.students
+            students: user.students,
+            age: user.age,
+            school: user.school,
+            email: user.email,
+            image: user.image,
+            firstname: user.firstname,
+            lastname: user.lastname,
+            location: user.location,
+            phone: user.phone,
+            posts: user.posts
           }, process.env.SECRET);
         //  { expiresIn: "60 days" }
 
@@ -126,6 +135,18 @@ module.exports = (app) => {
       console.log(err);
     });
   });
+
+//BUILD PROFILE
+app.post('buildprofile', (req, res) => {
+
+  let currentUser = req.user;
+
+  let profile = currentUser(req.body);
+
+  profile.firstTime = false;
+  
+
+})
 
 
 
