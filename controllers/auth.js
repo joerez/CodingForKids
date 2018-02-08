@@ -137,13 +137,37 @@ module.exports = (app) => {
   });
 
 //BUILD PROFILE
-app.post('buildprofile', (req, res) => {
+app.post('/buildprofile/', (req, res) => {
+  let user = req.user;
+  let userToken = req.user;
 
-  let currentUser = req.user;
+  // Find user userToken._id
+  User.findById(userToken._id).then((user) => {
 
-  let profile = currentUser(req.body);
+    let form = req.body;
 
-  profile.firstTime = false;
+    //const newUser = { ...user, ...form }
+
+    user.firstTime = false;
+    user.firstname = form.firstname;
+    user.lastname = form.lastname;
+    user.age = form.age;
+    user.email = form.email;
+    user.location = form.location;
+    user.beginner = form.beginner;
+    user.intermediate = form.intermediate;
+    user.advanced = form.advanced;
+    user.school = form.school;
+
+    // user.save
+    return user.save()
+  }).then((user) => {
+    res.redirect('/dashboard');
+  }).catch((err) => {
+    //set route for this catch.
+    console.log(err);
+  })
+  // Then ...
 
 
 })

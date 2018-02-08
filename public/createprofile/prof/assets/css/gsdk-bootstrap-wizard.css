@@ -247,9 +247,9 @@ h1 .subtitle {
   font-weight: 200;
   text-align: center;
 }
-.wizard-card[data-color="green"] /*.choice:hover*/ .icon, .wizard-card[data-color="green"] .choice.active .icon {
+/*.wizard-card[data-color="green"] /*.choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
   border-color: #05AE0E;
-}
+}*/
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #05AE0E;
 }
@@ -267,9 +267,9 @@ h1 .subtitle {
   cursor: pointer;
   font-weight: 500;
 }
-.wizard-card[data-color="azzure"] /*.choice:hover*/ .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
+/*.wizard-card[data-color="azzure"] /*.choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {/
   border-color: #2CA8FF;
-}
+}*/
 .wizard-card[data-color="azzure"] .picture:hover {
   border-color: #2CA8FF;
 }
