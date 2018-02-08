@@ -151,13 +151,14 @@ app.post('/buildprofile/', (req, res) => {
     user.firstTime = false;
     user.firstname = form.firstname;
     user.lastname = form.lastname;
-    user.age = form.age;
+    user.Age = form.age;
     user.email = form.email;
     user.location = form.location;
     user.beginner = form.beginner;
     user.intermediate = form.intermediate;
     user.advanced = form.advanced;
-    user.school = form.school;
+    user.School = form.school;
+    user.phone = form.phone;
 
     // user.save
     return user.save()
