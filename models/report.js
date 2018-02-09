@@ -12,8 +12,8 @@ const reportSchema = mongoose.Schema({
   ip: String,
   teacher : String,
   student : String,
-  studentId: { type: Schema.Types.ObjectId, ref: 'User' }
-
+  studentId: { type: Schema.Types.ObjectId, ref: 'User' },
+  date : String
 //  recaptcha: document.getElementById("g-recaptcha-response").value
 });
 

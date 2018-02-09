@@ -13,7 +13,6 @@
 <h1 class="whiteout" align="center">{{currentUser.firstname}}'s Dashboard!</h1>
 
 
-<h3 style="position: absolute; left: 0; right: 0; margin: auto; top: 95%;" class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h3>
 
 
 {{/if}}
@@ -32,6 +31,7 @@
   <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
   <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
   {{/if}}</div>
+  <h4 class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h4>
 
 {{else if currentUser.intermediate}}
 <h1 class="whiteout" align="center">Intermediate Web Course</h1>
@@ -47,6 +47,7 @@
   <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
   {{/if}}
 </div>
+<h4 class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h4>
 
 {{else if currentUser.advanced}}
 <h1 class="whiteout" align="center">Advanced Web Course.</h1>
@@ -60,6 +61,8 @@
   {{else}}
   <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
   <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
+  <h4 class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h4>
+
   {{/if}}</div>
 
 
@@ -83,6 +86,8 @@
 
 {{#if currentStudent}}
 {{/if}}
+
+
 
 <div style="display: none;">
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
