@@ -87,5 +87,9 @@ $('#menudropper').on("click", function() {
   $('.dropmenu').css("display", "flex");
 })
 
+$('.skip').on("click", function() {
+  $('.rootSec3').css("display", "flex");
+  $('.signUpForm').css("display", "flex");
+})
 
 })

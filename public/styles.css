@@ -39,6 +39,12 @@ body {
   color: black;
 }
 
+
+.skip {
+  position: absolute;
+  top: 80%; left: auto;
+}
+
 .rootSec2 {
   display: none;
   position: absolute;

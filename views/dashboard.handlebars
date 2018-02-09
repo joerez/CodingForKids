@@ -14,6 +14,16 @@
 {{/if}}
 
 
+{{#if currentUser.beginner}}
+<h1 class="whiteout" align="center">You are in the Beginners web course.</h1>
+{{else if currentUser.intermediate}}
+<h1 class="whiteout" align="center">You are in the Intermediate web course.</h1>
+{{else if currentUser.advanced}}
+<h1 class="whiteout" align="center">You are in the Advanced web course.</h1>
+{{else}}
+<h1 class="whiteout" align="center">You are not currently enrolled in a track.</h1>
+{{/if}}
+
 
 
 
