@@ -90,3 +90,20 @@
   color: white;
   border-radius: 4px;
 }
+
+
+/************************
+    TEACHER SECTION
+************************/
+
+.admin {
+  background-image: url('https://image.ibb.co/fun4yx/Untitled_design_1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.viewstudents {
+  background-image: url('https://image.ibb.co/mBB6dx/Untitled_design.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

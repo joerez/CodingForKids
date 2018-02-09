@@ -13,7 +13,7 @@
 <h1 class="whiteout" align="center">{{currentUser.firstname}}'s Dashboard!</h1>
 {{/if}}
 
-
+{{#if currentUser.student}}
 {{#if currentUser.beginner}}
 <h1 class="whiteout" align="center">Beginners Web Course</h1>
 
@@ -35,10 +35,10 @@
   <div class="square viewreports"><p align="center">View Reports</p></div>
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
-  <div class="square entersession"><p align="center">Enter Session</p></div>
+  <div class="square entersession"><p align="center">Install Tools For Session</p></div>
   {{else}}
-  <!--Permanent Google hangouts Link-->
-  <div class="square entersession"><p align="center">Enter Session</p></div>
+  <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
+  <div class="square entersession"><p align="center"><a href="{{currentUser.session}}">Enter Session</p></div>
   {{/if}}
 </div>
 
@@ -60,14 +60,15 @@
 <h1 class="whiteout" align="center">You are not currently enrolled in a track.</h1>
 
 {{/if}}
+{{/if}}
 
-{{#if currentUser.teacher}}
+{{#if currentUser.teacheracc}}
 <h1 class="whiteout" align="center">Teachers Desk</h1>
 
-<div class="trackBox">
-  <div class="square admin"></div>
-  <div class="square viewstudents"></div>
-  <div class="square entersession"></div>
+<div class="trackBox" id="sortable2">
+  <div class="square admin"><p align="center">Admin</p></div>
+  <div class="square viewstudents"><p align="center">View Students</p></div>
+  <div class="square entersession"><p align="center">Enter Session</p></div>
 </div>
 
 {{/if}}

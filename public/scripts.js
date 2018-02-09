@@ -111,6 +111,9 @@ $( function() {
   $( "#sortable" ).sortable({scroll: false, revert: true});
 } );
 
+$( function() {
+  $( "#sortable2" ).sortable({scroll: false, revert: true});
+} );
 
 
 })

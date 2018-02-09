@@ -19,6 +19,7 @@ const UserSchema = new Schema({
   teacheracc      : { type : Boolean, default: false },
   group           : { type : String },
   students        : [{type : String}],
+  student         : { type : Boolean, default: true },
   email           : {type : String},
   image           : {type : String},
   firstname       : {type : String},

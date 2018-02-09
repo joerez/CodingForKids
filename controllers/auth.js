@@ -125,6 +125,7 @@ module.exports = (app) => {
             phone: user.phone,
             session: user.session,
             sessionFirst: user.sessionFirst,
+            student: user.student,
             posts: user.posts
           }, process.env.SECRET);
         //  { expiresIn: "60 days" }
@@ -161,6 +162,7 @@ app.post('/buildprofile/', (req, res) => {
     user.advanced = form.advanced;
     user.School = form.school;
     user.phone = form.phone;
+    user.teacher = "Mr. Joe";
 
     // user.save
     return user.save()

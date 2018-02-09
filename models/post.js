@@ -10,8 +10,8 @@ const postSchema = mongoose.Schema({
   description: String,
   imageurl: String,
   ip: String,
-  username : String,
-  location : String
+  teacher : String,
+  student : String
 //  recaptcha: document.getElementById("g-recaptcha-response").value
 });
 
