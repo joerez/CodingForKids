@@ -20,3 +20,49 @@
 .modelbox h2 {
   color: #2c3e50;
 }
+
+.trackBox {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+
+.square {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /*background-color: orange;*/
+
+  margin-top: 10px;
+  align-items: ;
+  border-radius: 4px;
+  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+.Schedule {
+  background-image: url('https://image.ibb.co/iV688x/calender.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.viewreports {
+  background-image: url('http://clipart-library.com/img/1076694.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.entersession {
+  background-image: url('http://moziru.com/images/codeyy-clipart-tutor-2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+.square p {margin-left: 36.5%; margin-top: 5px;}

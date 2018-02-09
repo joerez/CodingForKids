@@ -15,16 +15,48 @@
 
 
 {{#if currentUser.beginner}}
-<h1 class="whiteout" align="center">You are in the Beginners web course.</h1>
+<h1 class="whiteout" align="center">Beginners web course.</h1>
+
+<div class="trackBox">
+  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square entersession"><p align="center">Enter Session</p></div>
+</div>
+
 {{else if currentUser.intermediate}}
-<h1 class="whiteout" align="center">You are in the Intermediate web course.</h1>
+<h1 class="whiteout" align="center">Intermediate web course.</h1>
+
+<div class="trackBox">
+  <div class="square schedule" id="schedule"></div>
+  <div class="square viewreports"></div>
+  <div class="square entersession"></div>
+</div>
+
 {{else if currentUser.advanced}}
-<h1 class="whiteout" align="center">You are in the Advanced web course.</h1>
+<h1 class="whiteout" align="center">Advanced web course.</h1>
+
+<div class="trackBox">
+  <div class="square schedule"></div>
+  <div class="square viewreports"></div>
+  <div class="square entersession"></div>
+</div>
+
 {{else}}
+
 <h1 class="whiteout" align="center">You are not currently enrolled in a track.</h1>
+
 {{/if}}
 
+{{#if currentUser.teacher}}
+<h1 class="whiteout" align="center">Teachers Desk</h1>
 
+<div class="trackBox">
+  <div class="square admin"></div>
+  <div class="square viewstudents"></div>
+  <div class="square entersession"></div>
+</div>
+
+{{/if}}
 
 
 
