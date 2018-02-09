@@ -83,9 +83,51 @@ $('.accountbtn2').on("click", function() {
 
 
 $('#menudropper').on("click", function() {
-  $('.dropmenu').slideToggle(500);
+  $('.dropmenu').slideToggle(250);
   $('.dropmenu').css("display", "flex");
 })
+
+// ****************************************
+
+// function getEl(selector) {
+//   return document.querySelector(selector); // returns the first match
+// }
+//
+// function getElAll() {
+//   return document.querySelectorAll(selector); // returns the first match
+// }
+
+// const menudropper = geEl("#menudropper");
+// const dropmenu = getEl('.dropmenu');
+//
+// menudropper.onclick = function(e) {
+//   dropmenu.classList.toggle('is-open')
+// }
+//
+// .dropmenu {
+//   display: flex;
+//   height: 0;
+//   overflow: hidden;
+//   transition: 250ms;
+// }
+//
+// <div class="droppmenu is-open">
+//
+// .dropmenu.is-open {
+//   height: auto;
+// }
+//
+// <div class="spin" style="--time: 500; --angle:90deg">
+//
+// .spin {
+//   --time: 400ms;
+//   --angle: 360deg;
+//   transform: rotate(var(--angle));
+//   transition: var(--time);
+// }
+
+// **************************************
+
 
 $('.skip').on("click", function() {
   $('.rootSec3').css("display", "flex");

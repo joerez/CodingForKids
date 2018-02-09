@@ -67,7 +67,7 @@ app.use(checkAuth);
 //ROUTES
 require('./controllers/root.js')(app);
 require('./controllers/auth.js')(app);
-
+require('./controllers/reports')(app);
 
 //Start Server
 app.listen(process.env.PORT || 3000, () => {

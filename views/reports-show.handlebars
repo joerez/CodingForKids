@@ -5,12 +5,22 @@
 <h1 class="whiteout" align="center">Hey {{currentUser.username}}, <br><br> Your reports by {{currentUser.teacher}} will help you keep track of your progress.</h1>
 
 {{#if currentUser.teacher}}
+<hr>
+<div class="container">
+  <div class="container">
+    {{> report-form}}
+    <hr>
 
+  </div>
+</div>
 {{/if}}
+
 
 {{#each reports}}
 
 {{/each}}
+
+
 
 <div style="display: none;">
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>

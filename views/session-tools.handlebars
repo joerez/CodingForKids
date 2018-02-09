@@ -1,20 +1,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="/dashboardstyle.css">
-<body class="dashbkg">
+<link rel="stylesheet" href="/styles/tools.css">
+
+<body style="background: #f39c12;">
 
 
-  <h1 class="whiteout" align="center">Hey {{currentUser.username}}, <br><br> Install some stuff first!</h1>
+  <div style="background: rgba(0,0,0,.0)" class="container">
+    <h1 align="center">Hey {{currentUser.username}}, </h1>
 
+    <br>
+    <p align="center">
+      We use a couple of different tools to make the most out of our sessions. You should install them before your first lesson.
+    </p>
 
+  <div class="remote-desktop">
+    <img style="float: left; height: 200px;" src="https://lh3.googleusercontent.com/I4DRWoABrUQsaAIQFVSKha98q1u2ilEdrwPJBaf9Mb8KdGZnXzs5DObrwcwUZovgOA=w300">
+  <div class="parabox">
+  <p>
+    The first thing we need is called Google Remote Desktop. This allows us to share screens during our session.
+  </p>
+  <p>
+    Google Remote Desktop: <a target="_blank" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en">Click Here</a>
+  </p>
+</div><!--parabox-->
+</div><!--remote desktop-->
+
+  <div class="google-hangouts">
+    <img src="https://lh6.ggpht.com/5puZavg4x2pThSTJgos1sARWoARea7tzr_B8AWEwn2lV05RoXo9M8BM2XwcvwG6nIGc=w300" style="float: left; height: 200px;">
+  <div class="parabox">
+  <p>
+    The second thing we will need is Google Hangouts. This is for voice chat. Please make sure you are using Google Chrome.
+  </p>
+  <p>
+    Google Hangouts: <a href="https://hangouts.google.com/" target="_blank">Click Here</a>
+  </p>
+</div><!--parabox-->
+</div><!--google hangouts-->
+
+<div class="atom">
+  <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-signs/092045-glossy-black-icon-signs-nuclear1.png" style="height: 200px; float: left;">
+  <div class="parabox2">
+  <p>
+    The third thing you’ll want to have is the text editor Atom. Atom is a 21st century text editor built specifically for programmers.
+  </p>
+  <p>
+    Atom: <a target="_blank" href="https://atom.io/">Click Here</a>
+  </p>
+</div><!--parabox2-->
+</div><!--atom-->
+
+<div class="conclusion">
+  <p align="center">
+    That’s it for now. When you're ready to join your session you can click the link in your student dashboard. This will bring us to our private Google Hangouts room.</p>
+    <p align="center">
+       Once we’re able to use voicechat there, we’ll turn on Google Remote Desktop and we will be good to go.
+    </p>
+</div><!--conclusion-->
+<center>
   <form method="post" action="/installed">
     <input class="btn btn-info" type="submit" value="Session Tools Installed">
   </form>
+</center>
+  <br>
 
 
 
 
-
+</div><!--End container-->
 
 
 

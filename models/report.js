@@ -7,7 +7,7 @@ const reportSchema = mongoose.Schema({
 //  description: { type: String, maxlength: 140 },
 //  player: { type: String, maxlength: 16 },
   title: String,
-  description: String,
+  content: String,
   imageurl: String,
   ip: String,
   teacher : String,

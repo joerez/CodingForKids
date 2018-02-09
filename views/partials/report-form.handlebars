@@ -1,0 +1,44 @@
+<form action="/reports/{{this.id}}/post" method="post">
+  <input type="hidden" value="{{report._id}}" name="reportId">
+  <fieldset>
+    <legend class="whiteout" align="center">Create New Report</legend>
+    <!-- TITLE -->
+    <div class="form-group">
+      <label class="whiteout" for="report-title">Title</label><br>
+      <input class="form-control"
+        id="report-title"
+        type="text"
+        name="title"
+        placeholder="Title"/>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="form-group">
+      <label class="whiteout" for="report-content">Description</label><br>
+      <textarea class="form-control"
+      id="report-description"
+      name="content"
+      rows="10"
+      placeholder="Your report..."/></textarea>
+    </div>
+
+    <!-- DATE -->
+    <div class="form-group">
+      <label class="whiteout" for="report-date">Date</label><br>
+      <input class="form-control"
+      id="report-date"
+      name="date"
+      placeholder="Date Of Session"/></textarea>
+    </div>
+
+
+  </fieldset>
+
+  <div class="g-recaptcha" data-sitekey="6LciD0EUAAAAAMSM4b2xRawGOzSD0ke7mlaY-ZpQ"></div>
+  <br>
+
+  <!-- BUTTON -->
+  <div class="form-group">
+   <button class="btn btn-primary" type="submit">Save Report</button>
+  </div>
+</form>

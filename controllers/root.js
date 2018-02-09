@@ -101,25 +101,6 @@ app.post('/installed', (req, res) => {
 })
 
 
-// SHOW
-app.get('/reports/:id', (req, res) => {
-
-  User.findById(req.user._id, (err, user) => {
-
-    const findPerson = User.findById(req.params.id)
-    const findReports = Report.find({ reportId: Object(req.params.id) }).populate('user')
-
-    Promise.all([findPerson, findReports]).then((values) => {
-      console.log(values)
-      res.render('reports-show', { user: values[0], reports: values[1], currentUser: user })
-    }).catch((err) => {
-      // ??? Maybe a status code ...
-      // handleErrors(err, res)
-      console.log(err.message)
-    })
-  })
-
-})
 
 
 } //Modules.exports
