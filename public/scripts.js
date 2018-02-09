@@ -95,15 +95,16 @@ $('.skip').on("click", function() {
 $('.square').mousedown(function(){
   $(this).css("transform", "scale(1.1)");
   $(this).css("border", "solid 2px #3498db");
-  $(this).css("box-shadow", "0px 10px 40px rgba(0, 0, 0, 0.9)"
-)
+  $(this).css("box-shadow", "0px 10px 40px rgba(0, 0, 0, 0.9)");
+  $(this).css("cursor", "-webkit-grabbing");
+
 })
 
 $('.square').mouseup(function(){
   $(this).css("transform", "scale(1.0)");
   $(this).css("border", "solid 0px #3498db");
   $(this).css("box-shadow", "0px 5px 20px rgba(0, 0, 0, 0.3)")
-
+  $(this).css("cursor", "-webkit-grab");
 })
 
 $( function() {

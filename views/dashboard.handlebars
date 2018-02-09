@@ -18,27 +18,39 @@
 <h1 class="whiteout" align="center">Beginners Web Course</h1>
 
 <div class="trackBox" id="sortable">
-  <div class="square Schedule"><p align="center">Calender</p></div>
+  <a target="_blank" href="https://calendly.com/joe-rezendes"><div class="square Schedule"><p align="center">Schedule</p></div></a>
   <div class="square viewreports"><p align="center">View Reports</p></div>
+  {{#if currentUser.sessionFirst}}
   <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{else}}
+  <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{/if}}
 </div>
 
 {{else if currentUser.intermediate}}
 <h1 class="whiteout" align="center">Intermediate Web Course</h1>
 
 <div class="trackBox" id="sortable">
-  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
   <div class="square viewreports"><p align="center">View Reports</p></div>
+  {{#if currentUser.sessionFirst}}
   <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{else}}
+  <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{/if}}
 </div>
 
 {{else if currentUser.advanced}}
 <h1 class="whiteout" align="center">Advanced Web Course.</h1>
 
 <div class="trackBox" id="sortable">
-  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <a target="_blank" href="https://calendly.com/joe-rezendes"><div class="square Schedule"><p align="center">Schedule</p></div></a>
   <div class="square viewreports"><p align="center">View Reports</p></div>
+  {{#if currentUser.sessionFirst}}
   <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{else}}
+  <div class="square entersession"><p align="center">Enter Session</p></div>
+  {{/if}}
 </div>
 
 {{else}}

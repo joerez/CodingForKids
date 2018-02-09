@@ -123,6 +123,8 @@ module.exports = (app) => {
             lastname: user.lastname,
             location: user.location,
             phone: user.phone,
+            session: user.session,
+            sessionFirst: user.sessionFirst,
             posts: user.posts
           }, process.env.SECRET);
         //  { expiresIn: "60 days" }

@@ -26,7 +26,9 @@ const UserSchema = new Schema({
   Age             : {type : String},
   School          : {type : String},
   location        : {type : String},
-  phone           : {type : String}
+  phone           : {type : String},
+  session         : {type: String},
+  sessionFirst    : {type : Boolean, default: true }
 });
 
 UserSchema.pre('save', function(next) {
