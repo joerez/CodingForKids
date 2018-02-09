@@ -2,6 +2,7 @@
   background: url('http://rachelrunningwild.me/wp-content/uploads/2017/12/crafty-inspiration-ideas-kitchen-table-top-texture-grey-background-view-wood-marble.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .modelbox {
@@ -89,6 +90,12 @@
   font-size: 150%;
   color: white;
   border-radius: 4px;
+}
+
+.bottom {
+  top: 99%;
+  left: auto;
+  right: auto;
 }
 
 
