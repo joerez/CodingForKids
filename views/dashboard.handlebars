@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="/dashboardstyle.css">
-
+<body class="dashbkg">
 
 {{#if currentUser.firstTime}}
 <div class="modelbox animated bounceInDown">
@@ -18,7 +18,7 @@
 <h1 class="whiteout" align="center">Beginners web course.</h1>
 
 <div class="trackBox">
-  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <div class="square Schedule"><p align="center">Calender</p></div>
   <div class="square viewreports"><p align="center">View Reports</p></div>
   <div class="square entersession"><p align="center">Enter Session</p></div>
 </div>
@@ -27,18 +27,18 @@
 <h1 class="whiteout" align="center">Intermediate web course.</h1>
 
 <div class="trackBox">
-  <div class="square schedule" id="schedule"></div>
-  <div class="square viewreports"></div>
-  <div class="square entersession"></div>
+  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square entersession"><p align="center">Enter Session</p></div>
 </div>
 
 {{else if currentUser.advanced}}
 <h1 class="whiteout" align="center">Advanced web course.</h1>
 
 <div class="trackBox">
-  <div class="square schedule"></div>
-  <div class="square viewreports"></div>
-  <div class="square entersession"></div>
+  <div class="square Schedule"><p align="center">Schedule</p></div>
+  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square entersession"><p align="center">Enter Session</p></div>
 </div>
 
 {{else}}

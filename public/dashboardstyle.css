@@ -1,3 +1,7 @@
+.dashbkg {
+  background: rgba(41, 128, 185,1.0);
+}
+
 .modelbox {
   position: absolute;
   margin: auto;
@@ -9,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -35,14 +39,14 @@
   height: 250px;
   width: 250px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   /*background-color: orange;*/
-
+  font-size: 130%;
   margin-top: 10px;
   align-items: ;
   border-radius: 4px;
-  box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Schedule {
@@ -52,7 +56,7 @@
 }
 
 .viewreports {
-  background-image: url('http://clipart-library.com/img/1076694.jpg');
+  background-image: url('https://image.ibb.co/bRPpFc/Untitled_design.jpg');
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -65,4 +69,17 @@
 
 
 
-.square p {margin-left: 36.5%; margin-top: 5px;}
+.square p {margin-top: 3px;}
+
+.hoverShow {
+  height: 100%;
+  width: 100%;
+  background: rgba(52, 152, 219,.7);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 150%;
+  color: white;
+  border-radius: 4px;
+}

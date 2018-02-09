@@ -92,4 +92,7 @@ $('.skip').on("click", function() {
   $('.signUpForm').css("display", "flex");
 })
 
+
+
+
 })
