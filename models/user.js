@@ -29,6 +29,7 @@ const UserSchema = new Schema({
   location        : {type : String},
   phone           : {type : String},
   session         : {type: String},
+  nextSession         : {type: String},
   sessionFirst    : {type : Boolean, default: true }
 });
 

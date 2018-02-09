@@ -125,6 +125,7 @@ module.exports = (app) => {
             phone: user.phone,
             session: user.session,
             sessionFirst: user.sessionFirst,
+            nextSession: user.nextSession,
             student: user.student,
             posts: user.posts
           }, process.env.SECRET);
@@ -163,6 +164,9 @@ app.post('/buildprofile/', (req, res) => {
     user.School = form.school;
     user.phone = form.phone;
     user.teacher = "Mr. Joe";
+    user.session = "session-null";
+    user.nextSession = "not scheduled yet.";
+
 
     // user.save
     return user.save()

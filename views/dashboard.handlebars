@@ -11,6 +11,11 @@
 </div>
 {{else}}
 <h1 class="whiteout" align="center">{{currentUser.firstname}}'s Dashboard!</h1>
+
+
+<h3 style="position: absolute; left: 0; right: 0; margin: auto; top: 95%;" class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h3>
+
+
 {{/if}}
 
 {{#if currentUser.student}}
@@ -18,27 +23,28 @@
 <h1 class="whiteout" align="center">Beginners Web Course</h1>
 
 <div class="trackBox" id="sortable">
-  <a target="_blank" href="https://calendly.com/joe-rezendes"><div class="square Schedule"><p align="center">Schedule</p></div></a>
-  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
+  <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
   {{#if currentUser.sessionFirst}}
-  <div class="square entersession"><p align="center">Enter Session</p></div>
+  <!--First session link with sign up info for different tools-->
+  <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
   {{else}}
-  <div class="square entersession"><p align="center">Enter Session</p></div>
-  {{/if}}
-</div>
+  <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
+  <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
+  {{/if}}</div>
 
 {{else if currentUser.intermediate}}
 <h1 class="whiteout" align="center">Intermediate Web Course</h1>
 
 <div class="trackBox" id="sortable">
   <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
-  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
-  <div class="square entersession"><p align="center">Install Tools For Session</p></div>
+  <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
   {{else}}
   <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
-  <div class="square entersession"><p align="center"><a href="{{currentUser.session}}">Enter Session</p></div>
+  <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
   {{/if}}
 </div>
 
@@ -46,14 +52,16 @@
 <h1 class="whiteout" align="center">Advanced Web Course.</h1>
 
 <div class="trackBox" id="sortable">
-  <a target="_blank" href="https://calendly.com/joe-rezendes"><div class="square Schedule"><p align="center">Schedule</p></div></a>
-  <div class="square viewreports"><p align="center">View Reports</p></div>
+  <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
+  <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
   {{#if currentUser.sessionFirst}}
-  <div class="square entersession"><p align="center">Enter Session</p></div>
+  <!--First session link with sign up info for different tools-->
+  <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
   {{else}}
-  <div class="square entersession"><p align="center">Enter Session</p></div>
-  {{/if}}
-</div>
+  <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
+  <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
+  {{/if}}</div>
+
 
 {{else}}
 
@@ -66,18 +74,16 @@
 <h1 class="whiteout" align="center">Teachers Desk</h1>
 
 <div class="trackBox" id="sortable2">
-  <div class="square admin"><p align="center">Admin</p></div>
-  <div class="square viewstudents"><p align="center">View Students</p></div>
-  <div class="square entersession"><p align="center">Enter Session</p></div>
+  <div class="square admin"><p align="center"><a href="/admin">Admin</p></a></div>
+  <div class="square viewstudents"><p align="center"><a href="teacherview">View Students</p></a></div>
+  <div class="square entersession"><p align="center"><a href="{{currentUser.session}}">Enter Session</p></a></div>
 </div>
 
 {{/if}}
 
+{{#if currentStudent}}
+{{/if}}
 
-
-
-
-
+<div style="display: none;">
 <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
-
-</body>
+</div>

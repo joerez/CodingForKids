@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema
 
 
-const postSchema = mongoose.Schema({
+const reportSchema = mongoose.Schema({
 //  title: { type: String, maxlength: 140 },
 //  description: { type: String, maxlength: 140 },
 //  player: { type: String, maxlength: 16 },
@@ -11,10 +11,12 @@ const postSchema = mongoose.Schema({
   imageurl: String,
   ip: String,
   teacher : String,
-  student : String
+  student : String,
+  studentId: { type: Schema.Types.ObjectId, ref: 'User' }
+
 //  recaptcha: document.getElementById("g-recaptcha-response").value
 });
 
-const Post = mongoose.model('Post', postSchema);
+const Report = mongoose.model('Report', reportSchema);
 
-module.exports = Post;
+module.exports = Report;

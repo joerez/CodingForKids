@@ -1,0 +1,17 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="/dashboardstyle.css">
+<body class="dashbkg">
+<h1 class="whiteout" align="center">Hey {{currentUser.username}}, <br><br> Your reports by {{currentUser.teacher}} will help you keep track of your progress.</h1>
+
+{{#if currentUser.teacher}}
+
+{{/if}}
+
+{{#each reports}}
+
+{{/each}}
+
+<div style="display: none;">
+<h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
+</div>
