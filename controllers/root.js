@@ -7,12 +7,14 @@ module.exports = (app) => {
 
 //root
 app.get('/', (req, res) => {
-  let currentUser = req.user
 
-  if (currentUser) {
-    res.render('dashboard', {currentUser});
+  let currentUser;
+  if (req.user) {
+    User.findById(req.user._id, (err, user) => {
+      res.render('dashboard', {currentUser: user});
+    })
   } else {
-  res.render('root-index', {currentUser});
+  res.render('root-index');
   }
 })
 
@@ -29,7 +31,7 @@ app.get('/dashboard', (req, res) => {
       res.render('dashboard', {currentUser: user});
     })
   } else {
-    res.render('/');
+    res.render('root-index');
   }
 
 })
