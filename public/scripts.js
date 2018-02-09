@@ -107,7 +107,7 @@ $('.square').mouseup(function(){
 })
 
 $( function() {
-  $( "#sortable" ).sortable({scroll: false});
+  $( "#sortable" ).sortable({scroll: false, revert: true});
 } );
 
 
