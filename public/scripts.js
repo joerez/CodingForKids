@@ -92,6 +92,23 @@ $('.skip').on("click", function() {
   $('.signUpForm').css("display", "flex");
 })
 
+$('.square').mousedown(function(){
+  $(this).css("transform", "scale(1.1)");
+  $(this).css("border", "solid 2px #3498db");
+  $(this).css("box-shadow", "0px 10px 40px rgba(0, 0, 0, 0.9)"
+)
+})
+
+$('.square').mouseup(function(){
+  $(this).css("transform", "scale(1.0)");
+  $(this).css("border", "solid 0px #3498db");
+  $(this).css("box-shadow", "0px 5px 20px rgba(0, 0, 0, 0.3)")
+
+})
+
+$( function() {
+  $( "#sortable" ).sortable({scroll: false});
+} );
 
 
 

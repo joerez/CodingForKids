@@ -1,5 +1,5 @@
 .dashbkg {
-  background: rgba(41, 128, 185,1.0);
+  background: url('http://rachelrunningwild.me/wp-content/uploads/2017/12/crafty-inspiration-ideas-kitchen-table-top-texture-grey-background-view-wood-marble.jpg');
 }
 
 .modelbox {
@@ -45,8 +45,12 @@
   font-size: 130%;
   margin-top: 10px;
   align-items: ;
-  border-radius: 4px;
+  border-radius: 15px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.scaleIt {
+  transform: scale(1.1);
 }
 
 .Schedule {
