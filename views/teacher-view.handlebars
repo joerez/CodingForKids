@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="/dashboardstyle.css">
 <body class="dashbkg">
-
+{{#if currentUser.teacheracc}}
 <h1 class="whiteout" align="center">CodingForKids Student Board</h1>
 
 
@@ -14,8 +14,9 @@
 </div>
 {{/each}}
 
-
-
+{{else}}
+<h1 class="whiteout" align="center">This is for teachers only.</h1>
+{{/if}}
 
 
 
