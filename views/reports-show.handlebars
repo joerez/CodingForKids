@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" href="/dashboardstyle.css">
 <body class="dashbkg">
-<h1 class="whiteout" align="center">Hey {{currentUser.username}}, <br><br> Your reports by {{currentUser.teacher}} will help you keep track of your progress.</h1>
+<h1 class="whiteout" align="center">{{currentUser.username}}'s Reports</h1>
 
-{{#if currentUser.teacher}}
+{{#if currentUser.teacheracc}}
 <hr>
 <div class="container">
   <div class="container">
@@ -15,8 +15,17 @@
 </div>
 {{/if}}
 
+<div style="margin-top: 50px;"></div>
 
 {{#each reports}}
+
+    <div id="instructions" class="paper">
+      {{this.date}} <br><br>
+      {{this.title}} <br><br>
+      {{this.content}} <br><br>
+    </div>​
+
+
 
 {{/each}}
 

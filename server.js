@@ -68,6 +68,8 @@ app.use(checkAuth);
 require('./controllers/root.js')(app);
 require('./controllers/auth.js')(app);
 require('./controllers/reports')(app);
+require('./controllers/teacher.js')(app);
+
 
 //Start Server
 app.listen(process.env.PORT || 3000, () => {

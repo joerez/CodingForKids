@@ -102,6 +102,7 @@
 <div style="z-index: 1000" class="dropmenu">
 {{#if currentUser}}
 <a class="navbar-btn" href="/Dashboard">Dashboard <i class="glyphicon glyphicon-user"></i></a></li>
+<a class="navbar-btn" href="/reports/{{currentUser.id}}">Reports <i class="glyphicon glyphicon-folder-open"></i></a></li>
 <a class="navbar-btn" href="/session-tools">Help <i class="glyphicon glyphicon-question-sign"></i></a></li>
 <a class="navbar-btn" href="/logout">Logout <i class="glyphicon glyphicon-log-out"></i></a></li>
 {{else}}

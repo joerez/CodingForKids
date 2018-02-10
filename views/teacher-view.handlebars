@@ -1,0 +1,24 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="/dashboardstyle.css">
+<body class="dashbkg">
+
+<h1 class="whiteout" align="center">CodingForKids Student Board</h1>
+
+
+{{#each users}}
+<div style="width: 95%;" id="instructions" class="paper">
+
+<li><a href="/reports/{{this._id}}">{{this.firstname}} {{this.lastname}}</a> | Age: {{this.Age}} | {{this.email}} | {{this.phone}} | {{this.School}} | {{#if this.beginner}} Beginner: {{this.beginner}} {{else if this.intermediate}}  Intermediate: {{this.intermediate}} {{else if this.advanced}}  Advanced: {{this.advanced}}  {{/if}} | {{this.location}} | {{this.nextSession}} | {{this.teacher}} | {{#if this.web}}  {{this.web}} | {{else if this.mobile}}
+   {{this.mobile}} |   {{/if}}  {{this.session}}
+</div>
+{{/each}}
+
+
+
+
+
+
+<div style="display: none;">
+<h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
+</div>
