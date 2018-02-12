@@ -79,6 +79,21 @@ module.exports = (app) => {
  })
 
 
+ //UPDATE STUDENTS HANGOUT SESSION URL
+ app.post('/admin/teacher', (req, res) => {
+   User.findOne({username: req.body.teacherName}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.teacheracc = true;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
+
+
 
 
 
