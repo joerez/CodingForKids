@@ -158,4 +158,13 @@ $( function() {
 } );
 
 
+
+$('.newReport').on("click", function() {
+  $('.reportPanel').slideToggle(250);
+  $('.reportPanel').css("display", "flex");
+})
+
+
+
+
 })

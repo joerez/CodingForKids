@@ -130,6 +130,11 @@ h4 {
     TEACHER SECTION
 ************************/
 
+.reportPanel {
+  display: none;
+}
+
+
 .admin {
   background-image: url('https://image.ibb.co/fun4yx/Untitled_design_1.jpg');
   background-repeat: no-repeat;
