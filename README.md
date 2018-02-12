@@ -20,10 +20,10 @@ You can schedule more time with your teacher and you can reschedule right from y
 Codingforkids has great built in tools and functionality for Teachers and Instructors tutoring students in any subject.
 
 ## Keep track of students
-Teachers have a full list of their students with all their relevent information. 
+Teachers have a full list of their students with all their relevent information.
 
 ## Administrative Tools
-Update your student's sessions live. 
+Update your student's sessions live.
 
 ## File Reports
 File reports for any student of yours.
@@ -31,5 +31,5 @@ File reports for any student of yours.
 ## Keep track of hours/lessons
 We use Calendly to schedule sessions with users.
 
-## Technologies
+### Technologies
 NodeJS, Express, MongoDB, Mongoose, Heroku, Handlebars, Jquery, Jquery UI, Javascript, HTML 5, CSS3

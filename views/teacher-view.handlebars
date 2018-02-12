@@ -7,7 +7,7 @@
 
 
 {{#each users}}
-<div style="width: 95%;" id="instructions" class="paper">
+<div style="margin-top: 10px; width: 95%;" id="instructions" class="paper">
 
 <li><a href="/reports/{{this._id}}">{{this.firstname}} {{this.lastname}}</a> | Age: {{this.Age}} | {{this.email}} | {{this.phone}} | {{this.School}} | {{#if this.beginner}} Beginner: {{this.beginner}} {{else if this.intermediate}}  Intermediate: {{this.intermediate}} {{else if this.advanced}}  Advanced: {{this.advanced}}  {{/if}} | {{this.location}} | {{this.nextSession}} | {{this.teacher}} | {{#if this.web}}  {{this.web}} | {{else if this.mobile}}
    {{this.mobile}} |   {{/if}}  {{this.session}}
