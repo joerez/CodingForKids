@@ -48,6 +48,39 @@ module.exports = (app) => {
 
 
 
+ //UPDATE NEXT SESSION
+ app.post('/admin/session', (req, res) => {
+   User.findOne({username: req.body.nextSessionName}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.nextSession = req.body.nextSessionContent;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
+
+
+
+ //UPDATE STUDENTS HANGOUT SESSION URL
+ app.post('/admin/hangout', (req, res) => {
+   User.findOne({username: req.body.hangoutName}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.session = req.body.hangoutContent;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
+
+
+
+
 
 
 

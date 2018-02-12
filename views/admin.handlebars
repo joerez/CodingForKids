@@ -5,11 +5,27 @@
 {{#if currentUser.teacheracc}}
 <h1 class="whiteout" align="center">Admin Area</h1>
 
+<style> form {margin-top: 20px; color: darkblue;} </style>
+
+<center>
+<form action="/admin/session" method="post">
+  <label for="nextSessionName">Next Session</label><br>
+  <input style="width: 300px;" name="nextSessionName" placeholder="Student Username">
+  <input style="width: 300px;" name="nextSessionContent" placeholder="Next Session Date/Time">
+  <button class="btn-success" type="submit">Update</button>
+</form>
+
+<form action="/admin/hangout" method="post">
+  <label for="hangout">Assign Hangout URL</label><br>
+  <input style="width: 300px;" name="hangoutName" placeholder="Student Username">
+  <input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">
+  <button class="btn-success" type="submit">Update</button>
+</form>
 
 
 
 
-
+</center>
 {{else}}
 <h1 class="whiteout" align="center">This is for teachers only.</h1>
 {{/if}}
