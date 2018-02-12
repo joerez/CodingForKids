@@ -30,3 +30,6 @@ File reports for any student of yours.
 
 ## Keep track of hours/lessons
 We use Calendly to schedule sessions with users.
+
+## Technologies
+NodeJS, Express, MongoDB, Mongoose, Heroku, Handlebars, Jquery, Jquery UI, Javascript, HTML 5, CSS3
