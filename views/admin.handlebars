@@ -1,11 +1,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="/dashboardstyle.css">
-<body class="dashbkg">
+<body style="background: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url('https://vignette.wikia.nocookie.net/clubpenguin/images/4/4b/HQ_2008_2.png/revision/latest?cb=20150906175656'); background-position: center; background-size: contain; background-repeat: no-repeat; background-color: black;" class="dashbkg">
 {{#if currentUser.teacheracc}}
 <h1 class="whiteout" align="center">Admin Area</h1>
 
-<style> form {margin-top: 20px; color: darkblue;} </style>
+<style> form {margin-top: 20px; color: white; /*background: rgba(255,255,255,.4)*/;}
+      /*  h1 {color: black; background: rgba(255,255,255,.4)}*/
+      input {color: black;}
+</style>
 
 <center>
 <form action="/admin/session" method="post">
