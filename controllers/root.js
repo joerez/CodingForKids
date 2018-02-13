@@ -101,6 +101,49 @@ app.post('/installed', (req, res) => {
 })
 
 
+//USER GITHUB ADDER
+app.get('/github', (req, res) => {
+  let currentUser;
+  if (req.user) {
+    User.findById(req.user._id, (err, user) => {
+      res.render('github', {currentUser: user});
+    })
+  } else {
+    res.render('root-index');
+  }
+
+})
+
+
+//POST GITHUB USERNAME
+app.post('/github/post', (req, res) => {
+
+  let user = req.user;
+  let userToken = req.user;
+
+  // Find user userToken._id
+  User.findById(userToken._id).then((user) => {
+
+    //const newUser = { ...user, ...form }
+
+    user.github = req.body.github;
+    user.addGithub = false;
+    // user.save
+    return user.save()
+  }).then((user) => {
+    res.redirect('/dashboard');
+  }).catch((err) => {
+    //set route for this catch.
+    console.log(err);
+  })
+
+
+
+})
+
+
+
+
 
 
 } //Modules.exports

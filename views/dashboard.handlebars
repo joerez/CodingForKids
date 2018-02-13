@@ -17,6 +17,21 @@
 
 {{/if}}
 
+{{#if currentUser.addGithub}}
+<div class="modelbox animated bounceInDown">
+<h1 style="color: white;" align="center">Hey {{currentUser.username}}! Your teacher has requested your GitHub Username.</h1>
+<center>
+  <form method="POST" action="/github/post">
+    <input type="text" name="github" placeholder="github username">
+    <input type="submit" class="btn btn-danger" value="Submit">
+  </form>
+
+  <a style="margin-top: 30px; color: white;" href="https://github.com/join">Register Here</a>
+
+</center>
+</div>
+{{/if}}
+
 {{#if currentUser.student}}
 {{#if currentUser.beginner}}
 <h2 class="whiteout" align="center">Beginners Web Course</h2>
@@ -24,13 +39,18 @@
 <div class="trackBox" id="sortable">
   <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
   <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
+  <div class="square weeklyassignments"><p align="center"><a href="/assignments/{{currentUser._id}}">Weekly Assignments</p></a></div>
+
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
   <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
   {{else}}
   <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
   <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
-  {{/if}}</div>
+  {{/if}}
+
+
+  </div>
   <h4 class="whiteout" align="center">Your next session with {{currentUser.teacher}} is {{currentUser.nextSession}}</h4>
 
 {{else if currentUser.intermediate}}
@@ -39,6 +59,8 @@
 <div class="trackBox" id="sortable">
   <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
   <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
+  <div class="square weeklyassignments"><p align="center"><a href="/assignments/{{currentUser._id}}">Weekly Assignments</p></a></div>
+
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
   <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
@@ -55,6 +77,8 @@
 <div class="trackBox" id="sortable">
   <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
   <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
+  <div class="square weeklyassignments"><p align="center"><a href="/assignments/{{currentUser._id}}">Weekly Assignments</p></a></div>
+
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
   <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>

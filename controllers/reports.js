@@ -1,6 +1,6 @@
-const User = require('../models/user');  //in place of review
-const Report = require('../models/report'); //in place of comment
-
+const User = require('../models/user');
+const Report = require('../models/report');
+const Assignment = require('../models/assignment');
 
 
 var Recaptcha = require('express-recaptcha');
@@ -59,33 +59,59 @@ module.exports = (app) => {
 
     })
 
-
-
-
-
-
-
-//
-//     Report.find({student : req.params.id}).then((reports) => {
-//
-//
-//     User.findById(req.user._id, (err, user) => {
-//
-//       const findPerson = User.findById(req.params.id)
-//       const findReports = Report.find({ reportId: Object(req.params.id) }).populate('user')
-//
-//       Promise.all([findPerson, findReports]).then((values) => {
-//         console.log(values)
-//         res.render('reports-show', { reports, user: values[0], reports: values[1], currentUser: user, id: req.params.id })
-//       }).catch((err) => {
-//         // ??? Maybe a status code ...
-//         // handleErrors(err, res)
-//         console.log(err.message)
-//       })
-//     })
-//
-//   })
-//
  })
 
-}
+
+ // SHOW ASSIGNMENTS PAGE
+ app.get('/assignments/:id', (req, res) => {
+
+    const findPerson = req.params.id;
+
+   User.findById(req.user._id, (err, user) => {
+     Assignment.find({student : req.params.id}).then((assignments) => {
+       res.render('assignments', {findPerson, assignments: assignments, currentUser: user});
+     })
+
+   })
+
+})
+
+
+// CREATE ASSIGNMENT
+app.post('/assignments/:id/post', (req, res) => {
+
+
+  let newAssignment = new Assignment(req.body);
+  newAssignment.username = req.user.username;
+  newAssignment.ip = req.connection.remoteAddress;
+  newAssignment.student = req.params.id;
+
+
+
+
+  // ??? Maybe a () => {} function here.
+  recaptcha.verify(req, function(error, data){
+       if(!error)
+           //success code
+           {
+             newAssignment.save((err,report) => {
+               // ??? Fetch this user
+               // then add to review to reviews array
+               // then save
+               if(err) throw err;
+               res.redirect('back');
+             })
+           }
+       else
+           //error code
+           {
+             res.redirect('/robot');
+           }
+   });
+
+})
+
+
+
+
+} //modules.exports

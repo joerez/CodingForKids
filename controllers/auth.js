@@ -127,7 +127,8 @@ module.exports = (app) => {
             sessionFirst: user.sessionFirst,
             nextSession: user.nextSession,
             student: user.student,
-            posts: user.posts
+            posts: user.posts,
+            github: user.github
           }, process.env.SECRET);
         //  { expiresIn: "60 days" }
 

@@ -1,17 +1,9 @@
-<form action="/reports/{{findPerson}}/post" method="post">
+<form action="/assignments/{{findPerson}}/post" method="post">
   <input type="hidden" value="{{report._id}}" name="reportId">
   <fieldset>
-    <legend class="whiteout" align="center">Create New Report</legend>
+    <legend class="whiteout" align="center">Create New Assignment</legend>
 
 
-    <!-- DATE -->
-    <div class="form-group">
-      <label class="whiteout" for="report-date">Date</label><br>
-      <input class="form-control"
-      id="report-date"
-      name="date"
-      placeholder="Date Of Session"/></textarea>
-    </div>
 
     <!-- TITLE -->
     <div class="form-group">
@@ -23,6 +15,18 @@
         placeholder="Title"/>
     </div>
 
+
+    <!-- DATE -->
+    <div class="form-group">
+      <label class="whiteout" for="report-date">Date</label><br>
+      <input class="form-control"
+      id="report-date"
+      name="date"
+      placeholder="Date Of Session"/></textarea>
+    </div>
+
+
+
     <!-- DESCRIPTION -->
     <div class="form-group">
       <label class="whiteout" for="report-content">Description</label><br>
@@ -32,7 +36,6 @@
       rows="5"
       placeholder="Your report..."/></textarea>
     </div>
-
 
 
 

@@ -79,7 +79,7 @@ module.exports = (app) => {
  })
 
 
- //UPDATE STUDENTS HANGOUT SESSION URL
+ //ADD NEW TEACHER
  app.post('/admin/teacher', (req, res) => {
    User.findOne({username: req.body.teacherName}, (err, user) => {
      console.log(req.body);
@@ -93,6 +93,19 @@ module.exports = (app) => {
    })
  })
 
+ //PROMPT FOR GITHUB
+ app.post('/dashboard/github', (req, res) => {
+   User.findOne({username: req.body.gitName}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.addGithub = true;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
 
 
 

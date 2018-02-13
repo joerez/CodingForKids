@@ -30,7 +30,9 @@ const UserSchema = new Schema({
   phone           : {type : String},
   session         : {type: String},
   nextSession         : {type: String},
-  sessionFirst    : {type : Boolean, default: true }
+  sessionFirst    : {type : Boolean, default: true },
+  github : {type: String},
+  addGithub : {type : Boolean, default: false}
 });
 
 UserSchema.pre('save', function(next) {

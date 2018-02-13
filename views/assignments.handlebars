@@ -1,0 +1,39 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="/dashboardstyle.css">
+<body style="background: url('https://images.freecreatives.com/wp-content/uploads/2015/10/lined_paper_texture.jpg'); background-repeat: no-repeat; background-size: cover;" class="dashbkg">
+<h1 align="center">Weekly Assignments</h1>
+
+{{#if currentUser.teacheracc}}
+<hr>
+<div class="container">
+  <center><button class="btn btn-info newReport">New Assignment</button></center>
+
+  <div class="reportPanel">
+  <div class="container">
+    {{> assign-form}}
+    <hr>
+
+  </div>
+</div><!--reportPanel-->
+</div>
+{{/if}}
+
+<div style="margin-top: 50px;"></div>
+
+
+{{#each assignments}}
+
+      <div class="letter">
+        <h1>{{this.title}}</h1>
+        <h3>{{this.date}}</h3>
+        {{this.content}} <br><br>
+      </div>
+
+{{/each}}
+
+
+
+<div style="display: none;">
+<h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
+</div>
