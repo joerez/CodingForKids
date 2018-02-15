@@ -15,29 +15,12 @@ module.exports = (app) => {
   //NEW Comment
  app.post('/reports/comment', (req, res) => {
 
-
-
-   recaptcha.verify(req, function(error, data){
-         if(!error)
-             //success code
-             {
                const commentData = {...req.body, user: req.user}
                 Comment.create(commentData).then((comment) => {
                   res.redirect('/reports/' + comment.reportId)
                 }).catch((err) => {
                   console.log(err.message);
                 })
-
-
-             }
-         else
-             //error code
-             {
-               res.redirect('/robot');
-             }
-     });
-
-
 
  })
 

@@ -7,10 +7,10 @@ const Comment = mongoose.model('Comment', {
 //  content: { type: String, maxlength: 1000 },
   title: String,
   content: String,
-  reportId: { type: Schema.Types.ObjectId, ref: 'Review' },
+  reportId: { type: Schema.Types.ObjectId, ref: 'Report' },
   user: {type : Schema.Types.ObjectId, ref: 'User', required: true},
   //idpost: [{type: Schema.Types.ObjectId, ref: 'Review'}]
-  assignmentId: { type: Schema.Types.ObjectId, ref: 'GroupPost' }
+  assignmentId: { type: Schema.Types.ObjectId, ref: 'Assignment' }
 //  recaptcha: document.getElementById("g-recaptcha-response").value
 });
 

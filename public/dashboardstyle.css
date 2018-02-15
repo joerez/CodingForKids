@@ -204,3 +204,36 @@ h4 {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+.replytext {
+  cursor: pointer;
+}
+
+.commentsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+.commentForm {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+	padding:25px 25px 40px;
+	width:250px;
+	font:20px 'Gloria Hallelujah', cursive;
+	border-radius:3px;
+	background: linear-gradient(#F9EFAF, #F7E98D);
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  white-space: normal;
+}
+
+.commentForm textarea {
+}
+
+commentForm:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+commentForm:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }

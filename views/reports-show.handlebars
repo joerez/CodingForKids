@@ -26,6 +26,18 @@
       {{this.date}} <br><br>
       {{this.title}} <br><br>
       {{this.content}} <br><br>
+      <a class="replytext">Comment</a>
+
+      <div class="commentForm">
+        <form method="post" action="/reports/comment">
+          {{> commentform}}
+        </form>
+      </div><!--commentform-->
+
+      <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
+
+      </div><!--commentsection-->
+
     </div>​
 
 {{/each}}

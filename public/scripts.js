@@ -164,7 +164,10 @@ $('.newReport').on("click", function() {
   $('.reportPanel').css("display", "flex");
 })
 
-
+$('.replytext').on("click", function() {
+  $('.commentForm').slideToggle(250);
+  $('.commentForm').css('display', 'flex');
+})
 
 
 })
