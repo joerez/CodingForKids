@@ -15,12 +15,12 @@ module.exports = (app) => {
   //NEW Comment
  app.post('/reports/comment', (req, res) => {
 
-               const commentData = {...req.body, user: req.user}
-                Comment.create(commentData).then((comment) => {
-                  res.redirect('/reports/' + comment.reportId)
-                }).catch((err) => {
-                  console.log(err.message);
-                })
+   const commentData = {...req.body, user: req.user}
+    Comment.create(commentData).then((comment) => {
+      res.redirect('/reports/' + comment.reportId)
+    }).catch((err) => {
+      console.log(err.message);
+    })
 
  })
 
