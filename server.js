@@ -69,6 +69,8 @@ require('./controllers/root.js')(app);
 require('./controllers/auth.js')(app);
 require('./controllers/reports')(app);
 require('./controllers/teacher.js')(app);
+require('./controllers/report-comments.js')(app);
+require('./controllers/assignment-comments.js')(app);
 
 
 const port = process.env.PORT || 3000
