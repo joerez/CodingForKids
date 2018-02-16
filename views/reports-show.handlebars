@@ -28,13 +28,18 @@
       {{this.content}} <br><br>
       <a class="replytext">Comment</a>
 
-      <div class="commentForm">
+      <div class="draggable absoluteForm commentForm">
         <form method="post" action="/reports/comment">
           {{> commentform}}
         </form>
+        <button class="btn btn-danger commentclose">Close</button>
+      <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
       </div><!--commentform-->
 
       <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
+        {{#each comments}}
+          {{> comment}}
+        {{/each}}
 
       </div><!--commentsection-->
 

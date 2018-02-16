@@ -1,7 +1,7 @@
 const User = require('../models/user');
 const Report = require('../models/report');
 const Assignment = require('../models/assignment');
-
+const Comment = require('../models/comment');
 
 var Recaptcha = require('express-recaptcha');
 //import Recaptcha from 'express-recaptcha'
@@ -51,6 +51,8 @@ module.exports = (app) => {
   app.get('/reports/:id', (req, res) => {
 
      const findPerson = req.params.id;
+     const findComments = Comment.find({ reportId: Object(req.params.id) }).populate('user')
+
 
     User.findById(req.user._id, (err, user) => {
       Report.find({student : req.params.id}).then((reports) => {

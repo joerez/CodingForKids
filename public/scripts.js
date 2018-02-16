@@ -157,6 +157,10 @@ $( function() {
   $( "#sortable2" ).sortable({scroll: false, revert: true});
 } );
 
+$( function() {
+  $( ".draggable" ).draggable({scroll: false/*, revert: true*/});
+} );
+
 
 
 $('.newReport').on("click", function() {
@@ -165,9 +169,20 @@ $('.newReport').on("click", function() {
 })
 
 $('.replytext').on("click", function() {
-  $('.commentForm').slideToggle(250);
+   // $('.commentForm').slideToggle(250);
+   $('.commentForm').removeClass('animated bounceOut');
+
+   $('.commentForm').show(0);
+  $('.commentForm').addClass('animated bounceIn');
   $('.commentForm').css('display', 'flex');
 })
+
+$('.commentclose').on("click", function() {
+   $('.commentForm').removeClass('animated bounceIn');
+  $('.commentForm').addClass('animated bounceOut');
+
+})
+
 
 
 })

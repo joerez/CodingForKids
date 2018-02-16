@@ -17,7 +17,7 @@ module.exports = (app) => {
 
    const commentData = {...req.body, user: req.user}
     Comment.create(commentData).then((comment) => {
-      res.redirect('/reports/' + comment.reportId)
+      res.redirect('back')
     }).catch((err) => {
       console.log(err.message);
     })
