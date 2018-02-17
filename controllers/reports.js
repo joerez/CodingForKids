@@ -56,7 +56,11 @@ module.exports = (app) => {
 
     User.findById(req.user._id, (err, user) => {
       Report.find({student : req.params.id}).then((reports) => {
+        findComments.then((comments) => {
+
+
         res.render('reports-show', {findPerson, reports: reports, currentUser: user});
+       })
       })
 
     })

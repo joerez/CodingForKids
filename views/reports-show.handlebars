@@ -26,16 +26,20 @@
       {{this.date}} <br><br>
       {{this.title}} <br><br>
       {{this.content}} <br><br>
-      <a class="replytext">Comment</a>
 
-      <div class="draggable absoluteForm commentForm">
-        <form method="post" action="/reports/comment">
-          {{> commentform}}
-        </form>
-        <button class="btn btn-danger commentclose">Close</button>
-      <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
-      </div><!--commentform-->
+      <div class="replydiv">
+        <a class="replytext">Comment</a>
 
+          <div class="draggable absoluteForm commentForm">
+            <form method="post" action="/reports/comment">
+              {{> commentform}}
+            </form>
+            <div class="closerDiv">
+              <button class="btn btn-danger commentclose">Close</button>
+            </div><!--closerdiv-->
+          <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
+        </div><!--commentform-->
+      </div><!--reply div-->
       <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
         {{#each comments}}
           {{> comment}}
