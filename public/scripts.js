@@ -171,16 +171,30 @@ $('.newReport').on("click", function() {
 
 $('.replydiv').on("click", function() {
    // $('.'.commentForm'').slideToggle(250);
-   $('.commentForm', this).removeClass('animated bounceOut');
 
-   $('.commentForm', this).show(0);
+   //if ($('.commentForm', this).is('.animated', '.bounceOut')) {
+     //$('.commentForm', this).removeClass('animated bounceOut');
+   //}
+
+
+   $('.commentForm', this).show(0).uniqueId();
   $('.commentForm', this).addClass('animated bounceIn');
   $('.commentForm', this).css('display', 'flex');
 })
 
   $('.closerDiv', this).on("click", function() {
-     $('.commentForm').parent('.replydiv', this).removeClass('animated bounceIn');
-    $('.commentForm').parent('.replydiv', this).addClass('animated bounceOut');
+     $('.commentForm').parent('.replydiv', this).removeClass('animated bounceIn', function() {
+
+       var contentPanelId = $('.closerDiv').parent().attr("id");
+
+      //  $('#'+contentPanelId).addClass('animated bounceOut');
+          $('.closerDiv').parent().addClass('animated bounceOut', function() {
+            $('.closerDiv').parent().removeClass('animated bounceOut');
+            $('.closerDiv').delay(10).parent().css("display", "none");
+
+          });
+        console.log(contentPanelId);
+     });
 
 
 })
