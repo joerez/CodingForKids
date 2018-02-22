@@ -168,37 +168,27 @@ $('.newReport').on("click", function() {
   $('.reportPanel').css("display", "flex");
 })
 
+//open comment form
+$('body').on("click", '.replytext', function(e) {
 
-$('.replydiv').on("click", function() {
-   // $('.'.commentForm'').slideToggle(250);
+   console.log('Show Reply');
+   $(this).siblings('.commentForm').removeClass('animated bounceOut')
+   $(this).siblings('.commentForm').show(0).addClass('animated bounceIn').css('display', 'flex');
 
-   //if ($('.commentForm', this).is('.animated', '.bounceOut')) {
-     //$('.commentForm', this).removeClass('animated bounceOut');
-   //}
-
-
-   $('.commentForm', this).show(0).uniqueId();
-  $('.commentForm', this).addClass('animated bounceIn');
-  $('.commentForm', this).css('display', 'flex');
 })
 
-  $('.closerDiv', this).on("click", function() {
-     $('.commentForm').parent('.replydiv', this).removeClass('animated bounceIn', function() {
+  //Close comment form
+  $('body').on("click", '.commentclose', function(e) {
 
-       var contentPanelId = $('.closerDiv').parent().attr("id");
+    console.log('Close Reply')
 
-      //  $('#'+contentPanelId).addClass('animated bounceOut');
-          $('.closerDiv').parent().addClass('animated bounceOut', function() {
-            $('.closerDiv').parent().removeClass('animated bounceOut');
-            $('.closerDiv').delay(10).parent().css("display", "none");
+    $(this).closest('.commentForm')
+      .removeClass('animated bounceIn')
+      .addClass('animated bounceOut', function(e) {
+        $(this).closest('.commentForm').hide(3000);
+      })
 
           });
-        console.log(contentPanelId);
-     });
-
-
-})
-
 
 
 })
