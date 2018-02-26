@@ -13,7 +13,8 @@ const reportSchema = mongoose.Schema({
   teacher : String,
   student : String,
   studentId: { type: Schema.Types.ObjectId, ref: 'User' },
-  date : String
+  date : String,
+  comments : [{}]
 //  recaptcha: document.getElementById("g-recaptcha-response").value
 });
 

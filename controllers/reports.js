@@ -50,21 +50,19 @@ module.exports = (app) => {
   // SHOW REPORT PAGE
   app.get('/reports/:id', (req, res) => {
 
-     const findPerson = req.params.id;
-     const findComments = Comment.find({ reportId: Object(req.params.id) }).populate('user')
+    const findPerson = req.params.id;
 
 
-    User.findById(req.user._id, (err, user) => {
+    let currentUser;
+    if (req.user) {
+        User.findById(req.user._id, (err, user) => {
       Report.find({student : req.params.id}).then((reports) => {
-        findComments.then((comments) => {
-
-
-        res.render('reports-show', {findComments, findPerson, reports: reports, currentUser: user});
+        res.render('reports-show', {findPerson, reports: reports, currentUser: user});
        })
-      })
-
-    })
-
+     })
+     } else {
+       res.redirect('back')
+     }
  })
 
 

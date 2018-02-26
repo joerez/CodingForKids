@@ -16,12 +16,15 @@ module.exports = (app) => {
  app.post('/reports/comment', (req, res) => {
 
    const commentData = {...req.body, username: req.user.username}
-    Comment.create(commentData).then((comment) => {
-      res.redirect('back')
-    }).catch((err) => {
-      console.log(err.message);
-    })
-
+   Report.findById(req.body.reportId).then((report) => {
+     Comment.create(commentData).then((comment) => {
+       report.comments.push(comment);
+       report.save();
+       res.redirect('back')
+     }).catch((err) => {
+       console.log(err.message);
+     })
+   })
  })
 
 
