@@ -8,7 +8,7 @@ const Comment = mongoose.model('Comment', {
   title: String,
   content: String,
   reportId: { type: Schema.Types.ObjectId, ref: 'Report' },
-  user: {type : Schema.Types.ObjectId, ref: 'User', required: true},
+  username: String,
   //idpost: [{type: Schema.Types.ObjectId, ref: 'Review'}]
   assignmentId: { type: Schema.Types.ObjectId, ref: 'Assignment' }
 //  recaptcha: document.getElementById("g-recaptcha-response").value

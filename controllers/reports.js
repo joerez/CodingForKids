@@ -59,7 +59,7 @@ module.exports = (app) => {
         findComments.then((comments) => {
 
 
-        res.render('reports-show', {findPerson, reports: reports, currentUser: user});
+        res.render('reports-show', {findComments, findPerson, reports: reports, currentUser: user});
        })
       })
 
@@ -91,8 +91,6 @@ app.post('/assignments/:id/post', (req, res) => {
   newAssignment.username = req.user.username;
   newAssignment.ip = req.connection.remoteAddress;
   newAssignment.student = req.params.id;
-
-
 
 
   // ??? Maybe a () => {} function here.
