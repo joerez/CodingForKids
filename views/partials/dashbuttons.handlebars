@@ -2,14 +2,18 @@
   <div class="square Schedule"><p align="center"><a target="_blank" href="https://calendly.com/joe-rezendes">Schedule</p></a></div>
   <div class="square viewreports"><p align="center"><a href="/reports/{{currentUser._id}}">View Reports</p></a></div>
   <div class="square weeklyassignments"><p align="center"><a href="/assignments/{{currentUser._id}}">Weekly Assignments</p></a></div>
+  <div class="square shareScreen"><p align="center"><a target="_blank" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en">Share Screen</p></a></div>
+
+
 
   {{#if currentUser.sessionFirst}}
   <!--First session link with sign up info for different tools-->
-  <div class="square entersession"><p align="center"><a href="session-tools">Install Tools For Session</p></a></div>
+  <div class="square entersession"><p align="center"><a href="session-tools">Install Tools</p></a></div>
   {{else}}
   <!--Permanent Google hangouts Link--> <!--You need to add these manually to database-->
   <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
   {{/if}}
+
 
 
   </div>

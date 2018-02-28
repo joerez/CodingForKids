@@ -39,8 +39,8 @@
 
 
 .square {
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -53,6 +53,16 @@
   cursor: -webkit-grab;
   transition: transform .2s, box-shadow .2s;
 }
+
+/* No greater than 900px, no less than 400px */
+@media (max-width:900px) and (min-width:300px) {
+    .square {
+        height: 100px;
+        width: 100px;
+        font-size: 60%;
+    }
+}​
+
 
 .scaleIt {
   transform: scale(1.1);
@@ -70,6 +80,7 @@
   background-size: contain;
 
 }
+
 .entersession {
   background-image: url('http://moziru.com/images/codeyy-clipart-tutor-2.jpg');
   background-repeat: no-repeat;
@@ -78,6 +89,12 @@
 
 .weeklyassignments {
   background-image: url('https://image.ibb.co/eyRY0n/Untitled_design_4.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shareScreen {
+  background-image: url('https://image.ibb.co/cMOJ8H/Untitled_design_7.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
