@@ -54,20 +54,16 @@
   transition: transform .2s, box-shadow .2s;
 }
 
-/* No greater than 900px, no less than 400px */
-@media (max-width:900px) and (min-width:300px) {
-    .square {
-        height: 100px;
-        width: 100px;
-        font-size: 60%;
-        margin: 10px;
-    }
-}​
 
 
 .scaleIt {
   transform: scale(1.1);
 }
+
+.scaleIt {
+  transform: scale(1.1);
+}
+
 
 .Schedule {
   background-image: url('https://image.ibb.co/iV688x/calender.png');
@@ -263,3 +259,19 @@ commentForm:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
   /*margin: auto;*/
   z-index: 500;
 }
+
+
+/* No greater than 900px, no less than 400px */
+@media (max-width:900px) and (min-width:300px) {
+    .square {
+        height: 100px;
+        width: 100px;
+        font-size: 60%;
+        margin: 10px;
+    }
+
+    .scaleIt {
+      transform: scale(1.25);
+    }
+
+}​
