@@ -273,7 +273,7 @@ commentForm:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
 }
 
 
-/* No greater than 900px, no less than 400px */
+/* No greater than 900px, no less than 300px */
 @media (max-width:900px) and (min-width:300px) {
     .square {
         height: 100px;

@@ -21,8 +21,17 @@ function heroSlide() {
 
 }
 
+$('#fun').on("click", function() {
+  $('#fun').hide();
+  $('.cta').addClass('woah simpleEntrance');
+  $('.cta').delay(11000).queue(function() {
+    $('.cta').removeClass('woah simpleEntrance');
+    $('#fun').show();
+  })
+})
 
 
 heroSlide();
+
 
 })
