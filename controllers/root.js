@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
       res.render('dashboard', {currentUser: user});
     })
   } else {
-  res.render('root-index');
+  res.render('root');
   }
 })
 
