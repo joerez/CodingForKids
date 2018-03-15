@@ -3,6 +3,10 @@
   color: white;
 }
 
+body {
+  background: aqua;
+}
+
 .navbar {
   border-radius: 0px;
 }
@@ -129,7 +133,7 @@ header {
 }
 
 .dots {
-  margin-top: 3rem;
+  margin-top: 12rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -150,40 +154,27 @@ header {
 }
 
 #fun {
+  margin-top: 4rem;
   font-size: 1rem;
 }
 
+/**************************
+        SECTION 2
+**************************/
 
 .section2 {
   background: aqua;
-  height: 90rem;
+  height: 55rem;
   width: 100%;
-  position: absolute;
-  top: 30rem;
-  bottom: 0;
-  right: 0;
-  left: 0;
   z-index: 1;
 }
 
 .sec2Text {
-  position: absolute;
-  top: 35rem;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 2rem;
   width: 30%;
 }
 
 .sec2Content {
-  position: absolute;
-  top: 35rem;
-  bottom: 0;
-  right: 0;
-  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -191,9 +182,6 @@ header {
 }
 
 .sec2Benefits {
-  position: absolute;
-  top: 60rem; left: 0; right: 0; bottom: 0;
-  margin-left: auto; margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -202,22 +190,47 @@ header {
 }
 
 .benefit {
-  border-radius: 100%;
-  border: solid 1px black;
-  height: 10rem;
-  width: 10rem;
+  border-radius: 4px;
+  /*border: solid 1px black;*/
+  height: 20rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: black;
   transition: all 200ms;
+  text-align: left;
 }
 
-.benefit:hover {
-  transform: scale(1.6);
-  box-shadow: 0 5px 7px rgba(0,0,0,.6)
+.benefit h3 {
+  width: 100%;
+}
+
+.benefit i {
+  width: 100%;
+  font-size: 3rem;
+}
+
+.buttoncta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+#cta2 {
+  height: 5rem;
+}
+
+
+.sec3 {
+  height: 300px; width: 100%; background: green;
+}
+
+.sec4 {
+  height: 300px; width: 100%; background: yellow;
 }
 
 
@@ -227,6 +240,14 @@ header {
         margin-top: 10px;
         width: 80%;
     }
+
+    .section2 {
+      height: 140rem;
+    }
+
+    .buttoncta {
+    }
+
 
 
 }​
