@@ -5,6 +5,7 @@
 
 body {
   background: #3498db;
+  font-family: Avenir;
 }
 
 
@@ -116,20 +117,22 @@ header {
 }
 
 .cta {
-  background: #3498db;
-  border-radius: 7px;
-  color: white;
-  padding-left: 10px; padding-right: 10px;
-  padding-top: 5px; padding-bottom: 5px;
-  font-size: 2rem;
-  box-shadow: 0 2px 3px rgba(0,0,0,.3);
+  background-color: rgba(253, 253, 253, 1);
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #C1C1C1;
+  padding: 10px 0;
+  text-decoration: none;
+  /*margin: 20px 0 25px 10%;*/
+  width: 20rem;
+  text-align: center;
   transition: all 100ms;
 }
 
 .cta:hover {
-  background: #3228db;
-  color: white;
-  transform: scale(1.1) rotateX(2deg) rotate(1deg);
+  background: #fefefe;
+  color: #616161;
+  transform: scale(1.1);
   box-shadow: 0 5px 7px rgba(0,0,0,.3);
 }
 
@@ -174,6 +177,7 @@ header {
   width: 100%;
   z-index: 1;
   color: white;
+  background-attachment: fixed;
 }
 
 .sec2con {
@@ -248,8 +252,9 @@ header {
   position: absolute;
   top: 120rem;
   width: 100%;
-  height: 60rem;
+  height: 62rem;
   background: #e9eaec;
+  perspective: 800px;
 }
 
 .sec3title {
@@ -279,18 +284,22 @@ header {
   background-color: #fff;
   border: 1px solid #dadada;
   border-radius: 5px;
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
   width: 30rem;
   min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   cursor: pointer;
+  transform-style: preserve-3d;
 }
 
   .track:hover {
     box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    transform:  translateY(-3px);
   }
+
+
 
 .track::selection {
   background: white;
@@ -320,22 +329,36 @@ header {
         SEC 4
 **********************/
 .sec4 {
-  height: 60rem;
+  position: absolute;
+  top: 182rem;
+  height: 50rem;
   width: 100%;
-  background: #f1c40f;
+  background: linear-gradient(rgba(52, 152, 219,.8), rgba(52, 152, 219,.8)),  url('https://images.unsplash.com/photo-1427104227401-94b390b378b0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3ac32fc87da5d225633c993294a46c69&auto=format&fit=crop&w=1651&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  background-attachment: fixed;
 }
 
 .sec4content {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 50%;
   width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  /*text-align: center;*/
 }
 
-li {
-  font-size: 2rem;
+.sec4content p {
+  width: 60%;
 }
+
 
 .sec4copy {
   color: white;
@@ -346,8 +369,26 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
+
+/**********************
+        SEC 5
+**********************/
+
+
+.sec5 {
+  position: absolute;
+  top: 230rem;
+  height: 30rem;
+  width: 100%;
+  background: green;
+}
+
+
+
+
+
 
 /* No greater than 900px, no less than 300px */
 @media (max-width:900px) and (min-width:300px) {
@@ -357,6 +398,7 @@ li {
     }
 
     .section2 {
+
       height: 105rem;
     }
 
@@ -366,7 +408,7 @@ li {
     .sec3 {
       top: 155rem;
       flex-wrap: wrap;
-      height: 125rem;
+      height: 130rem;
     }
 
     .sec3content {
@@ -378,4 +420,24 @@ li {
       width: 100%;
     }
 
+    .sec4 {
+      top: 285rem;
+      flex-wrap: wrap;
+      height: 80rem;
+    }
+
+    .sec4content {
+      margin-top: -50rem;
+      padding: 2rem;
+    }
+
+
+    .sec4img {
+      height: 110%;
+      width: 100%;
+    }
+
+    .sec5 {
+      top: 365rem;
+    }
 }​
