@@ -382,13 +382,55 @@ header {
   top: 230rem;
   height: 30rem;
   width: 100%;
-  background: green;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url('https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2845bb75e81dbda93a0d20726bd7759&auto=format&fit=crop&w=1700&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background: rgba(44, 62, 80,1.0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
+.mcLabel {
+  color: white;
+  font-size: 3rem;
+}
 
+.email {
+  width: 270px;
+  font-size: 20px;
+  padding-left: 10px;
+  height: 55px;
+  box-sizing: border-box;
+  line-height: 55px;
+  margin-bottom: 8px;
+  transition: all 200ms;
+}
 
+.email:hover {
+  transform: scale(2)
+}
 
+.emailbtn {
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    background: transparent;
+    color: white;
+    border-radius: 7px;
+    width: 12rem;
+    transition: all 200ms;
+}
+
+.emailbtn:hover {
+  background: rgba(0,0,0,.3);
+
+}
 
 /* No greater than 900px, no less than 300px */
 @media (max-width:900px) and (min-width:300px) {
