@@ -33,5 +33,6 @@ $('#fun').on("click", function() {
 
 heroSlide();
 
+$('.footer').css("margin-top", "0px");
 
 })

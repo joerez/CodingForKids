@@ -7,6 +7,7 @@ body {
   background: aqua;
 }
 
+
 .navbar {
   border-radius: 0px;
 }
@@ -226,13 +227,34 @@ header {
 
 
 .sec3 {
-  height: 300px; width: 100%; background: green;
+  height: 60rem;
+  width: 100%;
+  background: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.sec4 {
-  height: 300px; width: 100%; background: yellow;
+.sec3content {
+  height: 50%;
+  width: 100%;
 }
 
+li {
+  font-size: 2rem;
+}
+
+.sec3copy {
+  color: white;
+}
+
+.sec3img {
+  background: url('https://image.ibb.co/dXqhPc/imageedit_6_7150042098.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 
 /* No greater than 900px, no less than 300px */
 @media (max-width:900px) and (min-width:300px) {
@@ -248,6 +270,17 @@ header {
     .buttoncta {
     }
 
+    .sec3 {
+      flex-wrap: wrap;
+    }
 
+    .sec3content {
+      width: 100%;
+    }
+
+    .sec3img {
+      height: 50%;
+      width: 100%;
+    }
 
 }​
