@@ -30,21 +30,31 @@ $('#fun').on("click", function() {
   })
 })
 
-$('#track1').on("click", function() {
-  $('#web').show(0);
-  $('#web').css("display", "flex");
-})
+//Make a model appear, make parameters mimic jQuery syntax: '#modelname'
+function modelMaker(buttonName, modelName, closeButton) {
+  $(buttonName).on("click", function() {
+    $(modelName).show(0);
+    $(modelName).css("display", "flex");
+  })
 
-$('.cloze').on("click", function() {
-  $('#web').hide(0);
-})
+  $(closeButton).on("click", function() {
+    $(modelName).hide(0);
+  })
+
+}
+
+modelMaker('#track1', '#web', '#cloze1');
+modelMaker('#track2', '#mobile', '#cloze2');
+modelMaker('#track3', '#computerScience', '#cloze3');
 
 
 
 
+
+
+//Must call this last
 heroSlide();
 
-$('.footer').css("margin-top", "0px");
 
 
 })
