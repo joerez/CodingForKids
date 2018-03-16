@@ -200,6 +200,16 @@ h4 {
   background: url('http://getwallpapers.com/wallpaper/full/9/c/3/280903.jpg'); background-repeat: no-repeat; background-size: cover;
 }
 
+.dblink {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.dblink:hover {
+  text-decoration: none;
+}
+
 /************************
     TEACHER SECTION
 ************************/
