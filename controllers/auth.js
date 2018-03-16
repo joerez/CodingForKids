@@ -15,6 +15,14 @@ module.exports = (app) => {
 
   app.get('/sign-up',  (req, res) => {
 
+    res.render('sign-up.handlebars');
+  });
+
+
+  // SIGN UP FORM
+
+  app.get('/register',  (req, res) => {
+
     res.render('root-index.handlebars');
   });
 

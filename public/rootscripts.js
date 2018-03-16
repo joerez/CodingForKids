@@ -30,9 +30,18 @@ $('#fun').on("click", function() {
   })
 })
 
+$('#track1').on("click", function() {
+  $('#web').show(0);
+  $('#web').css("display", "flex");
+})
+
+$('.cloze').on("click", function() {
+  $('#web').hide(0);
+})
 
 heroSlide();
 
 $('.footer').css("margin-top", "0px");
+
 
 })
