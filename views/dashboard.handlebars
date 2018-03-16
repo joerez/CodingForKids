@@ -3,34 +3,9 @@
 <link rel="stylesheet" href="/dashboardstyle.css">
 <body class="dashbkg">
 
-{{#if currentUser.firstTime}}
-<div class="modelbox animated bounceInDown">
-  <h1 class="whiteout" align="center">Welcome <span style="color: #ecf0f1">{{currentUser.username}}!</span></h1>
-  <h2 class="whiteout" align="center">It's your first time here! Please visit the <a style="color: #ecf0f1" href="/firstvisit">Profile Builder</a> to move on!</h2>
-  <a style="margin-top: 30px; margin-left: 100px; margin-right: 100px;" role="button" class="btn btn-primary" href="/firstvisit">PROFILE BUILDER</a>
-</div>
-{{else}}
-<h1 class="whiteout" align="center">{{currentUser.firstname}}'s Dashboard!</h1>
 
+{{> infoModelsDashboard}}
 
-
-
-{{/if}}
-
-{{#if currentUser.addGithub}}
-<div class="modelbox animated bounceInDown">
-<h1 style="color: white;" align="center">Hey {{currentUser.username}}! Your teacher has requested your GitHub Username.</h1>
-<center>
-  <form method="POST" action="/github/post">
-    <input type="text" name="github" placeholder="github username">
-    <input type="submit" class="btn btn-danger" value="Submit">
-  </form>
-
-  <a target="_blank" style="margin-top: 30px; color: white;" href="https://github.com/join">Register Here</a>
-
-</center>
-</div>
-{{/if}}
 
 {{#if currentUser.student}}
 {{#if currentUser.beginner}}
