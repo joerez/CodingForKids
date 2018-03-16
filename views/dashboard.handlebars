@@ -29,7 +29,7 @@
 
 {{else}}
 
-<h3 class="whiteout" align="center">You are not currently enrolled in a track.</h3>
+<!-- <h3 class="whiteout" align="center">You are not currently enrolled in a track.</h3> -->
 
 {{/if}}
 {{/if}}
@@ -38,11 +38,11 @@
 <h3 class="whiteout" align="center">Teachers Desk</h3>
 <center>
 <div class="trackBox" id="sortable2">
-  <div class="square admin"><p align="center"><a href="/admin">Admin</p></a></div>
-  <div class="square viewstudents"><p align="center"><a href="teacherview">View Students</p></a></div>
-  <div class="square getHelp"><p align="center"><a target="_blank" href="admin/help/">Help Students</p></a></div>
-  <div class="square shareScreen"><p align="center"><a target="_blank" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en">Remote Desktop</p></a></div>
-  <div class="square entersession"><p align="center"><a target="_blank" href="{{currentUser.session}}">Enter Session</p></a></div>
+  <a class="dblink" href="/admin"><div class="square admin"><p align="center">Admin</p></div></a>
+  <a class="dblink" href="teacherview"><div class="square viewstudents"><p align="center">View Students</p></div></a>
+  <a class="dblink" target="_blank" href="admin/help/"><div class="square getHelp"><p align="center">Help Students</p></div></a>
+  <a class="dblink" target="_blank" href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en"><div class="square shareScreen"><p align="center">Remote Desktop</p></div></a>
+  <a class="dblink" target="_blank" href="{{currentUser.session}}"><div class="square entersession"><p align="center">Enter Session</p></div></a>
 </div>
 </center>
 {{/if}}
