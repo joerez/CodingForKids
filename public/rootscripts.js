@@ -39,6 +39,9 @@ $('.cloze').on("click", function() {
   $('#web').hide(0);
 })
 
+
+
+
 heroSlide();
 
 $('.footer').css("margin-top", "0px");
