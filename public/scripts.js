@@ -11,7 +11,7 @@
 
 var options = {
   strings: ["Hey", "Welcome<br>To", "Coding<br>For<br>Kids"],
-  typeSpeed: 50
+  typeSpeed: 40
 }
 
 var typed2 = new Typed("#typed", options);
@@ -21,10 +21,10 @@ var typed2 = new Typed("#typed", options);
 $(document).ready(function()
 {
 
-$('.rootSec1').fadeOut(9000).css('zIndex', '50', function() {
+$('.rootSec1').fadeOut(12000).css('zIndex', '50', function() {
 
 });
-$('.rootSec2').delay(3000).fadeIn(3000, function(){
+$('.rootSec2').delay(7000).fadeIn(3000, function(){
   $('.rootSec2').css('display', 'flex');
   $('.sec2text').delay(100).fadeIn(1000, function() {
 
