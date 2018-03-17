@@ -8,7 +8,7 @@ const UserSchema = new Schema({
   password        : { type : String, select: false },
   username        : { type : String, required: true, maxLength: 16 },
   posts           : [{ type : Schema.Types.ObjectId, ref: 'Post', required: true }],
-  //comments        : [{ type : Schema.Types.ObjectId, ref: 'Comment', required: true}],
+  //comments      : [{ type : Schema.Types.ObjectId, ref: 'Comment', required: true}],
   teacher         : { type : String },
   firstTime       : { type: Boolean, default: true },
   web             : { type : Boolean, default: false },
@@ -29,10 +29,12 @@ const UserSchema = new Schema({
   location        : {type : String},
   phone           : {type : String},
   session         : {type: String},
-  nextSession         : {type: String},
+  nextSession     : {type: String},
   sessionFirst    : {type : Boolean, default: true },
-  github : {type: String},
-  addGithub : {type : Boolean, default: false}
+  github          : {type: String},
+  addGithub       : {type : Boolean, default: false},
+  addFreeCodeCamp : {type : Boolean, default: false},
+  freecodecamp    : {type: String},
 });
 
 UserSchema.pre('save', function(next) {

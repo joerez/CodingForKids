@@ -135,6 +135,19 @@ module.exports = (app) => {
    })
  })
 
+ //PROMPT FOR FREECODECAMP
+ app.post('/dashboard/freecodecamp', (req, res) => {
+   User.findOne({username: req.body.freecodecamp}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.addFreeCodeCamp = true;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
 
 
 
