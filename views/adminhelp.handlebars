@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="/dashboardstyle.css">
 <body style="" class="dashbkg">
+  {{#if currentUser.teacheracc}}
+
 <h1 class="whiteout" align="center">All Help Requests</h1>
 
 <hr>
@@ -38,8 +40,9 @@
     </div>​
 
 {{/each}}
-
-
+{{else}}
+<h1 align="center">You must be a teacher to view all help requests</h1>
+{{/if}}
 
 
 
