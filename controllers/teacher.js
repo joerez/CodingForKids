@@ -137,7 +137,7 @@ module.exports = (app) => {
 
  //PROMPT FOR FREECODECAMP
  app.post('/dashboard/freecodecamp', (req, res) => {
-   User.findOne({username: req.body.freecodecamp}, (err, user) => {
+   User.findOne({username: req.body.fccuser}, (err, user) => {
      console.log(req.body);
      console.log(user);
      user.addFreeCodeCamp = true;
