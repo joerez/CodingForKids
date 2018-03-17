@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="/dashboardstyle.css">
+<body style="" class="dashbkg">
+<h1 class="whiteout" align="center">All Help Requests</h1>
+
+<hr>
+
+<div style="margin-top: 2rem;"></div>
+
+{{#each helps}}
+    <div id="instructions" class="paper">
+      {{this.username}} <br><br>
+      {{this.date}} <br><br>
+      {{this.title}} <br><br>
+      {{this.content}} <br><br>
+
+      <div class="replydiv">
+        <a class="replytext">Comment</a>
+
+          <div class="draggable absoluteForm commentForm">
+            <form method="post" action="/reports/comment">
+              {{> commentform}}
+            </form>
+            <div class="closerDiv">
+              <button class="btn btn-danger commentclose">Close</button>
+            </div><!--closerdiv-->
+          <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
+        </div><!--commentform-->
+      </div><!--reply div-->
+      <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
+        {{#each this.comments}}
+          {{> comment}}
+        {{/each}}
+
+      </div><!--commentsection-->
+
+    </div>​
+
+{{/each}}
+
+
+
+
+
+<div style="display: none;">
+<h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
+</div>

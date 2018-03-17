@@ -84,6 +84,25 @@ module.exports = (app) => {
  })
 
 
+ //ADMIN HELP
+ app.get('/admin/help', (req, res) => {
+
+   User.find({teacheracc : false}).then((users) => {
+     let currentUser;
+
+     if (req.user) {
+       Help.find({}, (err, helps) => {
+         res.render('adminhelp', {helps, currentUser: currentUser});
+       })
+     } else {
+     res.render('back', { currentUser: currentUser});
+   }
+   }).catch((err) => {
+     // ??? Maybe a status code...
+     console.log(err);
+   })
+
+})
 
 
 
