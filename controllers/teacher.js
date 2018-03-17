@@ -149,6 +149,28 @@ module.exports = (app) => {
    })
  })
 
+ //POST FREECODECAMP USERNAME
+ app.post('/codecamp/post', (req, res) => {
+
+   let user = req.user;
+   let userToken = req.user;
+
+   // Find user userToken._id
+   User.findById(userToken._id).then((user) => {
+
+     //const newUser = { ...user, ...form }
+
+     user.freecodecamp = req.body.freecodecamp;
+     user.addFreeCodeCamp = false;
+     // user.save
+     return user.save()
+   }).then((user) => {
+     res.redirect('/dashboard');
+   }).catch((err) => {
+     //set route for this catch.
+     console.log(err);
+   })
+ })
 
 
 
