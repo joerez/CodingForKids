@@ -91,9 +91,12 @@ module.exports = (app) => {
      let currentUser;
 
      if (req.user) {
+       User.findById(req.user._id, (err, user) => {
+
        Help.find({}, (err, helps) => {
-         res.render('adminhelp', {helps, currentUser: currentUser});
+         res.render('adminhelp', {helps, currentUser: user});
        })
+     })
      } else {
      res.render('back', { currentUser: currentUser});
    }
