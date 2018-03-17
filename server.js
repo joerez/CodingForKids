@@ -71,7 +71,7 @@ require('./controllers/reports')(app);
 require('./controllers/teacher.js')(app);
 require('./controllers/report-comments.js')(app);
 require('./controllers/assignment-comments.js')(app);
-require('./controllers/help')(app);
+require('./controllers/help.js')(app);
 
 
 const port = process.env.PORT || 3000
