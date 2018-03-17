@@ -9,6 +9,19 @@ var recaptcha = new Recaptcha('6LciD0EUAAAAAMSM4b2xRawGOzSD0ke7mlaY-ZpQ', '6LciD
 
 module.exports = (app) => {
 
+
+
+  //HELP AREA
+  app.get('/help', (req, res) => {
+
+    User.findById(req.user._id, (err, user) => {
+        res.render('help', {currentUser: user});
+      })
+
+
+  })
+
+
   //POST A HELP PAGE
   app.post('/help/:id/post', (req, res) => {
 

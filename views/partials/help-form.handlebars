@@ -1,0 +1,51 @@
+<form action="/help/{{findPerson}}/post" method="post">
+  <input type="hidden" value="{{help._id}}" name="helpId">
+  <fieldset>
+    <legend class="whiteout" align="center">Create New Help Request</legend>
+
+
+
+    <!-- TITLE -->
+    <div class="form-group">
+      <label class="whiteout" for="help-title">Title</label><br>
+      <input class="form-control"
+        id="report-title"
+        type="text"
+        name="title"
+        placeholder="Title"/>
+    </div>
+
+
+    <!-- DATE -->
+    <div class="form-group">
+      <label class="whiteout" for="help-date">Date</label><br>
+      <input class="form-control"
+      id="help-date"
+      name="date"
+      placeholder="Today's Date"/></textarea>
+    </div>
+
+
+
+    <!-- DESCRIPTION -->
+    <div class="form-group">
+      <label class="whiteout" for="help-content">Description</label><br>
+      <textarea class="form-control"
+      id="report-description"
+      name="content"
+      rows="5"
+      placeholder="Describe your issue... Use as much detail as possible."/></textarea>
+    </div>
+
+
+
+  </fieldset>
+
+  <div class="g-recaptcha" data-sitekey="6LciD0EUAAAAAMSM4b2xRawGOzSD0ke7mlaY-ZpQ"></div>
+  <br>
+
+  <!-- BUTTON -->
+  <div class="form-group">
+   <button class="btn btn-primary" type="submit">Publish Help Request</button>
+  </div>
+</form>
