@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="/dashboardstyle.css">
 <body style="" class="dashbkg">
-<h1 class="whiteout" align="center">Get Help</h1>
+<h1 class="whiteout" align="center">Help Requests</h1>
 
 <hr>
 <div class="container">
@@ -16,6 +16,38 @@
   </div>
 </div><!--reportPanel-->
 </div>
+
+<div style="margin-top: 2rem;"></div>
+
+{{#each helps}}
+    <div id="instructions" class="paper">
+      {{this.date}} <br><br>
+      {{this.title}} <br><br>
+      {{this.content}} <br><br>
+
+      <div class="replydiv">
+        <a class="replytext">Comment</a>
+
+          <div class="draggable absoluteForm commentForm">
+            <form method="post" action="/reports/comment">
+              {{> commentform}}
+            </form>
+            <div class="closerDiv">
+              <button class="btn btn-danger commentclose">Close</button>
+            </div><!--closerdiv-->
+          <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
+        </div><!--commentform-->
+      </div><!--reply div-->
+      <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
+        {{#each this.comments}}
+          {{> comment}}
+        {{/each}}
+
+      </div><!--commentsection-->
+
+    </div>​
+
+{{/each}}
 
 
 

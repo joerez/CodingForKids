@@ -12,6 +12,7 @@ const helpSchema = mongoose.Schema({
   ip: String,
   teacher : String,
   student : String,
+  username : String,
   studentId: { type: Schema.Types.ObjectId, ref: 'User' },
   date : String,
   comments : [{}]
