@@ -26,3 +26,19 @@
 </center>
 </div>
 {{/if}}
+
+
+{{#if currentUser.addFreeCodeCamp}}
+<div class="modelbox animated bounceInDown">
+<h1 style="color: white;" align="center">Hey {{currentUser.username}}! Your teacher has requested your FreeCodeCamp Username.</h1>
+<center>
+  <form method="POST" action="/codecamp/post">
+    <input type="text" name="freecodecamp" placeholder="freecodecamp username">
+    <input type="submit" class="btn btn-danger" value="Submit">
+  </form>
+
+  <a target="_blank" style="margin-top: 30px; color: white;" href="https://www.freecodecamp.org/email-signup">Register Here</a>
+
+</center>
+</div>
+{{/if}}
