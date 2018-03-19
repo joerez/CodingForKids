@@ -24,7 +24,7 @@
     <div id="instructions" class="paper">
       {{this.date}} <br><br>
       {{this.title}} <br><br>
-      {{this.content}} 
+      {{this.content}}
 
 
       <div class="replydiv">
@@ -48,7 +48,11 @@
       </div><!--reply div-->
       <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
         {{#each this.comments}}
+        <div style="display: flex; margin-bottom: 20px;" class="commentForm">
+
           {{> comment}}
+
+        </div>
         {{/each}}
 
       </div><!--commentsection-->
@@ -85,7 +89,11 @@
       </div><!--reply div-->
       <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
         {{#each this.comments}}
+        <div style="display: flex; margin-bottom: 20px;" class="commentForm">
+
           {{> comment}}
+
+        </div>
         {{/each}}
 
       </div><!--commentsection-->

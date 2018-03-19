@@ -40,7 +40,11 @@
       </div><!--reply div-->
       <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
         {{#each this.comments}}
+        <div style="display: flex; margin-bottom: 20px;" class="commentForm">
+
           {{> comment}}
+
+        </div>
         {{/each}}
 
       </div><!--commentsection-->
