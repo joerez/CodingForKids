@@ -17,10 +17,53 @@
   </div>
 </div><!--reportPanel-->
 </div>
-{{/if}}
+<br>
 
-<div style="margin-top: 50px;"></div>
 
+{{#each reports}}
+    <div id="instructions" class="paper">
+      {{this.date}} <br><br>
+      {{this.title}} <br><br>
+      {{this.content}} <br><br>
+
+
+      <div class="replydiv">
+        <a class="replytext">Comment</a>
+
+        <!--Delete-->
+        <form method="POST" action="/reports/{{this._id}}?_method=DELETE">
+          <input type="hidden" name="reportId" value={{this._id}}>
+        <button class="aabt aabtdel btn btn-danger" type="submit"><i class="glyphicon glyphicon-trash"></i></button>
+        </form>
+
+          <div class="draggable absoluteForm commentForm">
+            <form method="post" action="/reports/comment">
+              {{> commentform}}
+            </form>
+            <div class="closerDiv">
+              <button class="btn btn-danger commentclose">Close</button>
+            </div><!--closerdiv-->
+          <center>  <p style="margin-top: 10px; margin-bottom: -20px; font-family: arial; font-size: 80%;">Drag Me</p></center>
+        </div><!--commentform-->
+      </div><!--reply div-->
+      <div class="commentsection"><!--container that all the comments will go into as sticky notes-->
+        {{#each this.comments}}
+          {{> comment}}
+        {{/each}}
+
+      </div><!--commentsection-->
+
+    </div>​
+
+{{/each}}
+
+<!--end teacher section-->
+
+
+
+
+<!--student section-->
+{{else}}
 {{#each reports}}
     <div id="instructions" class="paper">
       {{this.date}} <br><br>
@@ -50,6 +93,11 @@
     </div>​
 
 {{/each}}
+
+{{/if}}
+
+<div style="margin-top: 50px;"></div>
+
 
 
 
