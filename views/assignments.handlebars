@@ -17,12 +17,36 @@
   </div>
 </div><!--reportPanel-->
 </div>
-{{/if}}
 
 <div style="margin-top: 50px;"></div>
+{{#each assignments}}
 
+      <div class="letter">
+        <h1>{{this.title}}</h1>
+        <h3>{{this.date}}</h3>
+        {{this.content}} 
+
+
+        <!--Delete-->
+        <form method="POST" action="/assignments/{{this._id}}?_method=DELETE">
+          <input type="hidden" name="assignmentId" value={{this._id}}>
+        <button class="aabt aabtdel btn btn-danger" type="submit"><i class="glyphicon glyphicon-trash"></i></button>
+        </form>
+
+
+      </div>
+
+      {{/each}}
+
+      <div style="margin-top: 50px;"></div>
+
+
+{{else}}
 
 {{#each assignments}}
+
+
+<div style="margin-top: 50px;"></div>
 
       <div class="letter">
         <h1>{{this.title}}</h1>
@@ -31,6 +55,14 @@
       </div>
 
 {{/each}}
+
+<div style="margin-top: 50px;"></div>
+
+
+{{/if}}
+
+
+
 
 
 

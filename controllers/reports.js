@@ -127,7 +127,7 @@ app.delete('/reports/:id', function (req, res) {
 // DELETE ASSIGNMENT
 app.delete('/assignments/:id', function (req, res) {
   console.log("DELETE assignment")
-  Assignment.findByIdAndRemove(req.body.Id).then((assignment) => {
+  Assignment.findByIdAndRemove(req.body.assignmentId).then((assignment) => {
     res.redirect('back');
   }).catch((err) => {
     // ???
