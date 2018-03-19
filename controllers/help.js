@@ -47,9 +47,6 @@ module.exports = (app) => {
              //success code
              {
                newHelp.save((err,report) => {
-                 // ??? Fetch this user
-                 // then add to review to reviews array
-                 // then save
                  if(err) throw err;
                  res.redirect('back');
                })
@@ -101,12 +98,20 @@ module.exports = (app) => {
      res.render('back', { currentUser: currentUser});
    }
    }).catch((err) => {
-     // ??? Maybe a status code...
      console.log(err);
    })
 
 })
 
+// DELETE HELP
+app.delete('/help/del', function (req, res) {
+  console.log("DELETE help request")
+  Help.findByIdAndRemove(req.body.helpId).then((help) => {
+    res.redirect('back');
+  }).catch((err) => {
+    console.log(err.message);
+  })
+})
 
 
 
