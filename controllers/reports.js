@@ -113,6 +113,27 @@ app.post('/assignments/:id/post', (req, res) => {
 
 })
 
+// DELETE REPORT
+app.delete('/reports/:id', function (req, res) {
+  console.log("DELETE report")
+  Report.findByIdAndRemove(req.params.id).then((report) => {
+    res.redirect('back');
+  }).catch((err) => {
+    // ???
+    console.log(err.message);
+  })
+})
+
+// DELETE ASSIGNMENT
+app.delete('/assignments/:id', function (req, res) {
+  console.log("DELETE assignment")
+  Assignment.findByIdAndRemove(req.params.id).then((assignment) => {
+    res.redirect('back');
+  }).catch((err) => {
+    // ???
+    console.log(err.message);
+  })
+})
 
 
 
