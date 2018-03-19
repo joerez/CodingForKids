@@ -8,7 +8,7 @@ body {
   font-family: Avenir;
 }
 
-.navbar-default {
+/*.navbar-default {
   background: linear-gradient(rgba(52, 152, 219,.8), rgba(52, 152, 219,.8));
   border-color: none;
   border: none;
@@ -23,7 +23,7 @@ body {
 
 .navbar-default .navbar-brand:hover {
     /*color: #341f97;*/
-    color: white;
+    /*color: white;
     transform: scale(1.1);
     text-shadow: 1px 1px #000;
 }
@@ -32,7 +32,7 @@ body {
 
 .navbar {
   border-radius: 0px;
-}
+}*/*/
 
 header {
   position: relative;
