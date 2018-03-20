@@ -1,4 +1,24 @@
 
+.callbtn {
+  border-radius: 4px;
+  background: rgba(0,0,0,.5);
+;
+  color: white;
+  border: solid 1px white;
+  transition: all 200ms;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.callbtn:hover {
+  background: rgba(0,0,0,.9);
+  transform: scale(1.1);
+  margin-right: 15px;
+  margin-left: 15px;
+  box-shadow: 0, 5px 7px rgba(0,0,0,.3);
+}
+
+
 .boxer {
   display: none;
   position: absolute;
@@ -23,6 +43,13 @@
   color: white;
   text-align: center;
   align-items: center;
+  transition: all 200ms;
+}
+
+.closeprompt:hover {
+  background: rgba(0,0,0,.4);
+  transform: scale(1.2);
+  margin-top: 10px;
 }
 
 .btn-success {
