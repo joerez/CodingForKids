@@ -51,6 +51,11 @@
         <div style="display: flex; margin-bottom: 20px;" class="commentForm">
 
           {{> comment}}
+          <!--Delete-->
+          <form method="POST" action="/reports/comment/{{this._id}}?_method=DELETE">
+            <input type="hidden" name="commentId" value={{this._id}}>
+          <button class="aabt aabtdel btn btn-danger" type="submit"><i class="glyphicon glyphicon-trash"></i></button>
+          </form>
 
         </div>
         {{/each}}

@@ -30,9 +30,9 @@ module.exports = (app) => {
 
  //DELETE COMMENT
  app.delete('/reports/comment/:id', function (req, res) {
-   console.log("delete comment")
+   console.log("delete comment " + req.body.commentId + ' ' + req.params.id)
    Comment.findByIdAndRemove(req.params.id).then((comment) => {
-     res.redirect('/reports/' + comment.reviewId);
+     res.redirect('back');
    }).catch((err) => {
      console.log(err.message);
    })
