@@ -6,9 +6,12 @@ function modelMaker(buttonName, modelName, closeButton) {
   })
 
   $(closeButton).on("click", function() {
-    $(modelName).hide(0);
-  })
+    $(modelName).hide(500);
+
+    })
 
 }
 
 modelMaker('.session', '.sessionbox', '#closesession');
+modelMaker('.teacher', '.teacherbox', '#closeteacher');
+modelMaker('.prompts', '.promptbox', '#closepromptbox');

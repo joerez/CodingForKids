@@ -1,12 +1,41 @@
 
-.sessionbox {
+.boxer {
   display: none;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  height: 45rem;
+  width: 40rem;
+  background: rgba(192, 57, 43,.9);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
-.teacherbox {
-  display: none;
+
+.closeprompt {
+  width: 20%;
+  border-radius: 8px;
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  text-align: center;
+  align-items: center;
 }
 
-.promptBox {
-  display: none;
+.btn-success {
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: white;
+}
+
+input {
+  border-radius: 4px;
+  width: 10rem;
+  margin-bottom: 10px;
 }

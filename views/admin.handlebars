@@ -1,7 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="/dashboardstyle.css">
+
 <link rel="stylesheet" href="/adminstyle.css">
+<link rel="stylesheet" href="http://www.joerezendes.com/projects/Woah.css/woah.css">
 
 <body class="adminbkg">
 {{#if currentUser.teacheracc}}
@@ -16,11 +18,13 @@
 
 
 <button class="session">Sessions</button>
-  <div class="sessionbox">
+  <div class="boxer sessionbox animated bounceInLeft">
+    <h3>Sessions</h3>
     <form action="/admin/session" method="post">
       <label for="nextSessionName">Next Session</label><br>
       <input style="width: 300px;" name="nextSessionName" placeholder="Student Username">
       <input style="width: 300px;" name="nextSessionContent" placeholder="Next Session Date/Time">
+      <br>
       <button class="btn-success" type="submit">Update</button>
 
     </form>
@@ -29,26 +33,32 @@
       <label for="hangout">Assign Hangout URL</label><br>
       <input style="width: 300px;" name="hangoutName" placeholder="Student Username">
       <input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">
+      <br>
       <button class="btn-success" type="submit">Update</button>
     </form>
     <button id="closesession" class="closeprompt">close</button>
 
   </div>
 
-  <button class="teachers">Teacher</button>
+  <button class="teacher">Teacher</button>
 
-  <div class="teacherbox">
+  <div class="boxer teacherbox animated bounceInLeft">
+    <h3>Teacher Tools</h3>
     <form action="/admin/teacher" method="post">
       <label for="teacherName">Add New Teacher</label><br>
       <input style="width: 300px;" name="teacherName" placeholder="Teacher's Username">
       <!--<input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">-->
       <button class="btn-success" type="submit">Update</button>
     </form>
+
+    <button id="closeteacher" class="closeprompt">close</button>
+
   </div>
 
-<button class="promptBtn">Prompts</button>
+<button class="prompts">Prompts</button>
 
-<div class="promptBox">
+<div class="boxer promptbox animated bounceInLeft">
+  <h3>Prompts</h3>
 <!--Prompt github box model in dashboard -->
 <form action="/dashboard/github" method="post">
   <label for="gitName">Prompt For Github</label><br>
@@ -57,8 +67,6 @@
   <button class="btn-success" type="submit">Prompt</button>
 </form>
 
-
-
 <!--Prompt FCC box model in dashboard -->
 <form action="/dashboard/freecodecamp" method="post">
   <label for="fccuser">Prompt For Free Code Camp</label><br>
@@ -66,6 +74,7 @@
   <!--<input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">-->
   <button class="btn-success" type="submit">Prompt</button>
 </form>
+<button id="closepromptbox" class="closeprompt">close</button>
 
 </div>
 
