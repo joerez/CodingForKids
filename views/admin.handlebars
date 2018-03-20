@@ -1,6 +1,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="/dashboardstyle.css">
+<link rel="stylesheet" href="/adminstyle.css">
+
 <body class="adminbkg">
 {{#if currentUser.teacheracc}}
 <h1 class="whiteout" align="center">Admin Area</h1>
@@ -11,27 +13,42 @@
 </style>
 
 <center>
-<form action="/admin/session" method="post">
-  <label for="nextSessionName">Next Session</label><br>
-  <input style="width: 300px;" name="nextSessionName" placeholder="Student Username">
-  <input style="width: 300px;" name="nextSessionContent" placeholder="Next Session Date/Time">
-  <button class="btn-success" type="submit">Update</button>
-</form>
 
-<form action="/admin/hangout" method="post">
-  <label for="hangout">Assign Hangout URL</label><br>
-  <input style="width: 300px;" name="hangoutName" placeholder="Student Username">
-  <input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">
-  <button class="btn-success" type="submit">Update</button>
-</form>
 
-<form action="/admin/teacher" method="post">
-  <label for="teacherName">Add New Teacher</label><br>
-  <input style="width: 300px;" name="teacherName" placeholder="Teacher's Username">
-  <!--<input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">-->
-  <button class="btn-success" type="submit">Update</button>
-</form>
+<button class="session">Sessions</button>
+  <div class="sessionbox">
+    <form action="/admin/session" method="post">
+      <label for="nextSessionName">Next Session</label><br>
+      <input style="width: 300px;" name="nextSessionName" placeholder="Student Username">
+      <input style="width: 300px;" name="nextSessionContent" placeholder="Next Session Date/Time">
+      <button class="btn-success" type="submit">Update</button>
 
+    </form>
+
+    <form action="/admin/hangout" method="post">
+      <label for="hangout">Assign Hangout URL</label><br>
+      <input style="width: 300px;" name="hangoutName" placeholder="Student Username">
+      <input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">
+      <button class="btn-success" type="submit">Update</button>
+    </form>
+    <button id="closesession" class="closeprompt">close</button>
+
+  </div>
+
+  <button class="teachers">Teacher</button>
+
+  <div class="teacherbox">
+    <form action="/admin/teacher" method="post">
+      <label for="teacherName">Add New Teacher</label><br>
+      <input style="width: 300px;" name="teacherName" placeholder="Teacher's Username">
+      <!--<input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">-->
+      <button class="btn-success" type="submit">Update</button>
+    </form>
+  </div>
+
+<button class="promptBtn">Prompts</button>
+
+<div class="promptBox">
 <!--Prompt github box model in dashboard -->
 <form action="/dashboard/github" method="post">
   <label for="gitName">Prompt For Github</label><br>
@@ -39,6 +56,8 @@
   <!--<input style="width: 300px;" name="hangoutContent" placeholder="Google Hangouts URL">-->
   <button class="btn-success" type="submit">Prompt</button>
 </form>
+
+
 
 <!--Prompt FCC box model in dashboard -->
 <form action="/dashboard/freecodecamp" method="post">
@@ -48,7 +67,7 @@
   <button class="btn-success" type="submit">Prompt</button>
 </form>
 
-
+</div>
 
 </center>
 {{else}}
@@ -62,3 +81,4 @@
 </div>
 
 <div style="margin-bottom: -20%;"></div>
+<script src="/admin.js"></script>
