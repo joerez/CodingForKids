@@ -94,6 +94,19 @@ module.exports = (app) => {
  })
 
 
+ //CHANGE STUDENTS TEACHER
+ app.post('/admin/changeteacher', (req, res) => {
+   User.findOne({username: req.body.changeTeacherUser}, (err, user) => {
+     console.log(req.body);
+     console.log(user);
+     user.teacher = req.body.changeTeacherTeacher;
+     user.save((err, user) => {
+       console.log(user);
+
+       res.redirect('/admin');
+     })
+   })
+ })
 
 
 
