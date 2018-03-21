@@ -15,3 +15,4 @@ function modelMaker(buttonName, modelName, closeButton) {
 modelMaker('.session', '.sessionbox', '#closesession');
 modelMaker('.teacher', '.teacherbox', '#closeteacher');
 modelMaker('.prompts', '.promptbox', '#closepromptbox');
+modelMaker('.studentListBtn', '.studentList', '#closeStudentList');
