@@ -19,7 +19,7 @@
 
 .callbtn2 {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 60rem; left: 0; right: 0; bottom: 0;
   margin: auto;
   border-radius: 4px;
   background: rgba(0,0,0,.5);
@@ -53,6 +53,7 @@
   text-align: center;
   align-items: center;
   border-radius: 20px;
+  z-index: 2;
 }
 
 
@@ -93,12 +94,19 @@ input {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   margin: auto;
+  margin-right: 10rem;
   height: 45rem;
-  width: 40rem;
+  width: 25rem;
   background: rgba(192, 57, 43,.9);
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   border-radius: 20px;
+}
+
+.students {
+  height: 30rem;
+  width: 100%;
+  overflow: scroll;
 }
