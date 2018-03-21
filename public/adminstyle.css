@@ -107,6 +107,7 @@ input {
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 5px 7px rgba(0,0,0,.3);
+  z-index: 2;
 }
 
 .students {
@@ -117,4 +118,29 @@ input {
 
 h4 {
   margin-top: 0px;
+}
+
+/* No greater than 900px, no less than 300px */
+@media (max-width:900px) and (min-width:300px) {
+
+.boxer {
+  margin-top: 5px;
+  background: rgba(44, 62, 80,.9);
+}
+
+.studentList {
+  background: rgba(44, 62, 80,.9);
+  margin-bottom: 20px;
+  margin-left: 5px;
+  width: 40rem;
+  height: 25rem;
+}
+
+.students {
+  height: 10rem;
+  width: 100%;
+  overflow: scroll;
+}
+
+
 }
