@@ -47,13 +47,15 @@
   margin: auto;
   height: 45rem;
   width: 40rem;
-  background: rgba(192, 57, 43,.9);
+  background: rgba(0,0,0,.5);
+  border: solid 1px white;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   border-radius: 20px;
   z-index: 2;
+  box-shadow: 0 5px 7px rgba(0,0,0,.3);
 }
 
 
@@ -97,16 +99,22 @@ input {
   margin-right: 10rem;
   height: 45rem;
   width: 25rem;
-  background: rgba(192, 57, 43,.9);
+  background: rgba(0,0,0,.5);
+  border: solid 1px white;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 0 5px 7px rgba(0,0,0,.3);
 }
 
 .students {
   height: 30rem;
   width: 100%;
   overflow: scroll;
+}
+
+h4 {
+  margin-top: 0px;
 }

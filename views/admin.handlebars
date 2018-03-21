@@ -96,20 +96,12 @@
 
 <div class="studentList animated flipInX">
   <h3 class="whiteout">Student List</h3>
+  <p style="color: white; font-weight: bold;">First Name | Username | Teacher</p>
+
   <div class="students">
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
-  <h1>hey</h1>
+    {{#each users}}
+      <p style="color: white;">{{this.firstname}} | {{this.username}} | {{this.teacher}}</p>
+    {{/each}}
   </div>
 
   <button id="closeStudentList" class="closeprompt">close</button>

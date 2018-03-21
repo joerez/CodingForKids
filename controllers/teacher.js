@@ -41,9 +41,12 @@ module.exports = (app) => {
  app.get('/admin', (req, res) => {
 
    User.findById(req.user._id, (err, user) => {
-       res.render('admin', {currentUser: user});
+
+     User.find({}, (err, users) => {
+       res.render('admin', {currentUser: user, users});
      })
 
+     })
 
  })
 
