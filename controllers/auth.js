@@ -172,7 +172,7 @@ app.post('/buildprofile/', (req, res) => {
     user.advanced = form.advanced;
     user.School = form.school;
     user.phone = form.phone;
-    user.teacher = "Mr. Joe";
+    user.teacher = "MrJoe";
     user.session = "session-null";
     user.nextSession = "not scheduled yet.";
 
