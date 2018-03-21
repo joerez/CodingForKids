@@ -47,6 +47,15 @@ module.exports = (app) => {
 
  })
 
+ //teachers lounge
+ app.get('/admin/lounge', (req, res) => {
+
+   User.findById(req.user._id, (err, user) => {
+       res.render('teachers-lounge', {currentUser: user});
+     })
+
+
+ })
 
 
 
@@ -186,6 +195,7 @@ module.exports = (app) => {
      console.log(err);
    })
  })
+
 
 
 

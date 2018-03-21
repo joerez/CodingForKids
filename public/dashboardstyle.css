@@ -6,6 +6,14 @@
   min-height: 100vh;
 }
 
+.loungebkg {
+  background: url('https://images.unsplash.com/photo-1503971052383-6d71287aef49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=843e924ac7b3f78291c8934e626b5aa5&auto=format&fit=crop&w=1334&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 .modelbox {
   position: absolute;
   margin: auto;
@@ -307,6 +315,11 @@ commentForm:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
     .dashbkg {
       background: #2980b9;
     }
+
+    .loungebkg {
+      background: #2980b9;
+    }
+
 
     .spacey {
       background: #2980b9;
