@@ -109,6 +109,12 @@
   background-size: contain;
 }
 
+.adminChat {
+  background-image: url('https://preview.ibb.co/j2UNkH/Untitled_design_14.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .square p {margin-top: 3px;}
 
 .hoverShow {
