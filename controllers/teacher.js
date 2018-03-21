@@ -18,19 +18,21 @@ module.exports = (app) => {
   app.get('/teacherview', (req, res) => {
 
     User.find({teacheracc : false}).then((users) => {
+      User.find({teacher : req.user.username}).then((users) => {
       let currentUser;
 
       if (req.user) {
         User.findById(req.user._id, (err, user) => {
+
           res.render('teacher-view', {users, currentUser: user});
         })
       } else {
       res.render('back', { currentUser: currentUser});
     }
     }).catch((err) => {
-      // ??? Maybe a status code...
       console.log(err);
     })
+})
 
  })
 
