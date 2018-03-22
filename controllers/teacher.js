@@ -42,7 +42,7 @@ module.exports = (app) => {
 
    User.findById(req.user._id, (err, user) => {
 
-     User.find({}, (err, users) => {
+     User.find({teacheracc : false}, (err, users) => {
        res.render('admin', {currentUser: user, users});
      })
 
