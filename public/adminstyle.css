@@ -124,14 +124,34 @@ h4 {
 @media (max-width:900px) and (min-width:300px) {
 
 .boxer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 5px;
   background: rgba(44, 62, 80,.9);
+  height: 30rem;
+  overflow: scroll;
+  justify-content: flex-start;
+}
+
+.closeprompt {
+  width: 20%;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.closeprompt:hover {
+  transform: none;
+  background: transparent;
+  margin-top: 5px;
 }
 
 .studentList {
   background: rgba(44, 62, 80,.9);
   margin-bottom: 20px;
-  margin-left: 5px;
+  margin-left: auto;
+  margin-right: auto;
   width: 40rem;
   height: 25rem;
 }
@@ -142,5 +162,9 @@ h4 {
   overflow: scroll;
 }
 
+.adminbkg {
+  min-height: 100vh;
+  background: rgba(44, 62, 80,1.0);
+}
 
 }
