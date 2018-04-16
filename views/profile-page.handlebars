@@ -19,17 +19,16 @@
      </div>
 
      <div class="studentData">
-     Username: {{this.username}}
-     Age: {{this.Age}}
-     {{this.email}}
-     {{this.phone}}
-     {{this.School}}
-     {{#if this.beginner}} Beginner: {{this.beginner}} {{else if this.intermediate}}  Intermediate: {{this.intermediate}} {{else if this.advanced}}  Advanced: {{this.advanced}}  {{/if}}
-     {{this.location}}
-     {{this.nextSession}}
-     {{this.teacher}}
-     {{#if this.web}}{{this.web}}{{else if this.mobile}}{{this.mobile}}{{/if}}
-     {{this.session}}
+       <p>Username: {{this.username}}</p>
+       <p> Age: {{this.Age}}</p>
+       <p> Email: <a class="maillink" style="color: #f1c40f; text-direction: underline;" href="mailto:{{this.email}}">{{this.email}}</a></p>
+       <p> Phone: {{this.phone}}</p>
+       <p> School: {{this.School}}</p>
+       <p> Level: {{#if this.beginner}} Beginner: {{this.beginner}} {{else if this.intermediate}}  Intermediate: {{this.intermediate}} {{else if this.advanced}}  Advanced: {{this.advanced}}  {{/if}}</p>
+       <p> Location: {{this.location}}</p>
+       <p> Next Session: {{this.nextSession}}</p>
+       <p> Teacher: {{this.teacher}}</p>
+       <p> Session URL: {{this.session}}</p>
     </div>
   </div>
 </center>
