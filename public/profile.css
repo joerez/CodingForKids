@@ -1,0 +1,49 @@
+body {
+  background: url('https://image.ibb.co/iFBQkH/wood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.student {
+  width: 90%;
+  color: white;
+}
+
+.clickables {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clicklink {
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 12px;
+  transition: all 200ms;
+  margin: 10px;
+}
+
+.clicklink:hover {
+  color: white;
+  text-decoration: none;
+  background: #34495e;
+  transform: scale(1.1);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* No greater than 900px, no less than 300px */
+@media (max-width:900px) and (min-width:300px) {
+
+body {
+  background: #3498db;
+}
+
+}

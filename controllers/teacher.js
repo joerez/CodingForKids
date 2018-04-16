@@ -50,6 +50,26 @@ module.exports = (app) => {
 
  })
 
+ // VIEW STUDENTS
+ app.get('/users/:username', (req, res) => {
+
+     User.find({ username: req.params.username}).then((users) => {
+     let currentUser;
+
+     if (req.user) {
+       User.findById(req.user._id, (err, user) => {
+         res.render('profile-page', {users, currentUser: user});
+       })
+     } else {
+     res.render('back', { currentUser: currentUser});
+   }
+   }).catch((err) => {
+     console.log(err);
+   })
+
+})
+
+
  //teachers lounge
  app.get('/admin/lounge', (req, res) => {
 
