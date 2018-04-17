@@ -34,7 +34,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .hero2 {
   position: absolute;
@@ -97,10 +97,6 @@ header {
   cursor: pointer;
 }
 
-.herotext:hover {
-  transform: scale(1.1);
-  transform-style: preserve-3d;
-}
 
 .herosub {
   font-size: 2rem;
