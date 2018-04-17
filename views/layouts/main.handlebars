@@ -29,6 +29,16 @@
 
 </head>
 <body>
+  <script>
+    // Check that service workers are registered
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+</script>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -42,13 +52,8 @@
   <script src="/typed.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script src="https://www.2b2t.reviews/dist/wow.min.js"></script>
-      <script>
-       new WOW().init();
-     </script>
 
   <script src="/scripts.js"></script>
-  <script src="/rootscripts.js"></script>
 
 </body>
 
