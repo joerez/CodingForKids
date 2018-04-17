@@ -2,22 +2,22 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox
 
 workbox.precaching.precacheAndRoute([]);
 
-const workboxBuild = require('workbox-build');
-
-// NOTE: This should be run *AFTER* all your assets are built
-const buildSW = () => {
-  // This will return a Promise
-  return workboxBuild.injectManifest({
-    swSrc: 'src/sw.js',
-    swDest: 'build/sw.js',
-    globDirectory: 'build',
-    globPatterns: [
-      '**\/*.{js,css,html,png}',
-    ]
-  });
-}
-
-buildSW();
+// const workboxBuild = require('workbox-build');
+//
+// // NOTE: This should be run *AFTER* all your assets are built
+// const buildSW = () => {
+//   // This will return a Promise
+//   return workboxBuild.injectManifest({
+//     swSrc: 'src/sw.js',
+//     swDest: 'build/sw.js',
+//     globDirectory: 'build',
+//     globPatterns: [
+//       '**\/*.{js,css,html,png}',
+//     ]
+//   });
+// }
+//
+// buildSW();
 
 
 workbox.routing.registerRoute(
