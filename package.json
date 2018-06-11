@@ -14,7 +14,7 @@
     "git": "^0.1.5",
     "heroku": "^0.2.0",
     "jsonwebtoken": "^8.1.1",
-    "method-override": "^2.3.10",
+    "method-override": "^2.3.10", 
     "mongodb": "^3.0.2",
     "mongoose": "^5.0.3",
     "nodemon": "^1.14.12",

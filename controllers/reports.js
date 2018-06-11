@@ -29,8 +29,7 @@ module.exports = (app) => {
              //success code
              {
                newReport.save((err,report) => {
-                 // ??? Fetch this user
-                 // then add to review to reviews array
+                 // add to review to reviews array
                  // then save
                  if(err) throw err;
                  res.redirect('back');

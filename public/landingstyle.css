@@ -94,18 +94,15 @@ header {
   font-size: 5rem;
   transition: all 200ms;
   transform-style: preserve-3d;
-  cursor: pointer;
 }
 
 
 .herosub {
   font-size: 2rem;
   transition: all 200ms;
-  cursor: pointer;
 }
 
 .herosub:hover {
-  transform: scale(1.1);
 }
 
 .cta {
