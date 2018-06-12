@@ -1,14 +1,79 @@
+* {
+  font-family: 'source sans pro', sans-serif;
+}
+
+
 body {
   background-color: black;
 }
 
 .loginbkg {
-  background-image: linear-gradient(rgba(62, 20, 20, 0.3), rgba(62, 20, 20, 0.3)), url('https://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 100%), url('https://www.verizon.com/about/sites/default/files/news-media/141203_Teen_Student_on_Tablet_640x400.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
 }
+
+#login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 1px 2px 2px rgba(0,0,0,.3);
+}
+
+.top-lab {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.field {
+    background-color: #fff;
+    padding: 10px;
+    width: 304px;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+    margin: 4px !important;
+}
+
+.g-recaptcha, input {
+    margin: 4px 0;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.lgn-btn {
+    padding: 15px;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #2c3e50;
+    border: 0px solid #3e5871;
+}
+
+.bot-links, .bot-links a {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #777;
+}
+
+.top-lab {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
 
 .rootSec1 {
   background: url('https://media2.giphy.com/media/3o7buijTqhjxjbEqjK/giphy.gif');

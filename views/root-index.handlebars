@@ -1,96 +1,30 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-<div class="rootSec1">
-
-<div class="typingbox">
-<h1 align="center" id="typed" class="root1Text"></h1>
-</div>
-
-<button class="skip btn btn-primary">Skip</button>
-
-</div><!--rootSec1-->
-
-<div class="rootSec2">
-  <div class="root2box">
-<h1 align="center" class="sec2text"><b>Learn How To Code</b></h1>
-<!--<a class="sec2text btn btn-primary">Login</a>-->
-  </div>
-</div>
-
-<div class="rootSec3">
-  <h1 align="center" class="sec3text">Please Sign Up<br>To Continue</h1>
-<!--  <a class="sec3text btn btn-primary">Sign Up Below</a> -->
+<body class="loginbkg">
 
 
+<form id="login-box" method="POST" action="/sign-up">
+        <div class="top-lab">Register</div>
 
 
-<div class="signUpForm">
-  <div class="container">
-<center>
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-      <form class="forms" action="/sign-up" method="post">
-        <legend class="whiteout">Sign Up</legend>
-        <div class="form-group">
-          <label class="whiteout" for="post-title">Username</label>
-          <input maxlength="16" type="text" name="username" class="form-control" id="username" placeholder="Username">
-        </div>
-        <div class="form-group">
-          <label class="whiteout" for="post-subreddit">Password</label>
-          <input name="password" type="password" class="form-control" id="password" placeholder="password">
-        </div>
+        <input class="field" maxlength="16" placeholder="Username" name="username" type="text">
+        <input class="field" placeholder="Password" name="password" type="password">
+        <input class="field" placeholder="Repeat Password" name="password2" type="password">
 
         <div class="g-recaptcha" data-sitekey="6LciD0EUAAAAAMSM4b2xRawGOzSD0ke7mlaY-ZpQ"></div>
-        <br>
 
+        <input class="lgn-btn" value="Register" type="submit">
 
-          <button type="submit" class="btn btn-primary">Sign Up!</button>
-          <br>
-      </form>
+        <div class="bot-links">
+            <a href="/login">Login</a>
+        </div>
+    </form>
+
+    <div style="display: none;">
+    <h1 style="display: none;" align="center" id="typed" class="root1Text"></h1>
     </div>
 
-
-    </center>
-  </div><!--container-->
-</div><!--signUpForm-->
-<br>
-<button class="accountbtn btn btn-primary">I Already Have An Account</button>
-
-
-<div class="logInForm">
-
-
-  <div class="container">
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-      <form class="forms" style="margin-top: 30px;" action="/login" method="post">
-        <legend class="whiteout">Returning Users - Login</legend>
-        <div class="form-group">
-          <label class="whiteout" for="post-title">Username</label>
-          <input type="text" name="username" class="form-control" id="username" placeholder="Username">
-        </div>
-        <div class="form-group">
-          <label class="whiteout" for="post-subreddit">Password</label>
-          <input name="password" type="password" class="form-control" id="password" placeholder="password">
-        </div>
-        <div class='text-right'>
-          <button type="submit" class="btn btn-primary">Login!</button>
-        </div>
-      </form>
-    </div>
-  </div>
-  </div>
-
-
-  <center>
-  <button class="accountbtn2 btn btn-primary">Wait, I Don't Have An Account</button>
-  </center>
-
-</div><!--LogInForm-->
-
-</div><!--sec 3-->
 
 <script src="/typedindex.js"></script>
 <script>
