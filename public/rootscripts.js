@@ -53,7 +53,7 @@ modelMaker('#track3', '#computerScience', '#cloze3');
 
 
 //Must call this last
-heroSlide();
+// heroSlide();
 
 
 
