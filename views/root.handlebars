@@ -180,6 +180,12 @@ window.addEventListener('mousemove', function(event) {
   mouse.y = event.y
 })
 
+window.addEventListener('touch', function(event) {
+  mouse.x = event.x
+  mouse.y = event.y
+})
+
+
 window.addEventListener('resize', function(e) {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
